@@ -1,0 +1,1222 @@
+TIP004_MAGENTO_REST.appzip (6/15/22 3:23 PM):
+    discountCheck_makeQueryLists.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_GetM3WarehouseAndSupplyProducts.esql (6/15/22 3:23 PM):
+    getItems_FillCache.esql (6/15/22 3:23 PM):
+    getItems_StoreEnglishRiversandData.esql (6/15/22 3:23 PM):
+    tip000-common-faulthandling-lib.libzip (6/15/22 3:23 PM):
+        manualFaulthandler_FixMessage.map (6/15/22 3:23 PM):
+        exceptionFaulthandler_castInputBLOBtoEnvString.esql (6/15/22 3:23 PM):
+        faulthandling_functions.esql (6/15/22 3:23 PM):
+        exceptionFaulthandler_inputDataASXMLNSC.esql (6/15/22 3:23 PM):
+        exceptionFaulthandler_setMQMD.esql (6/15/22 3:23 PM):
+        exceptionFaulthandler_writeFaultEventMessage.esql (6/15/22 3:23 PM):
+        exceptionFaulthandler.subflow (6/15/22 3:23 PM):
+        library.descriptor (6/15/22 3:23 PM):
+        exceptionFaulthandler_castExceptionBLOBtoEnvString.esql (6/15/22 3:23 PM):
+        exceptionFaulthandler_exceptionTreeAsXMLNSC.esql (6/15/22 3:23 PM):
+        manualFaulthandler.subflow (6/15/22 3:23 PM):
+        Deployment descriptor:
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.queueName = TIP082.FAULT.ERRORLOGGING
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.connection
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.destinationQueueManagerName
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.queueManagerHostname
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.listenerPortNumber
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.channelName
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.securityIdentity
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.useSSL
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.SSLPeerName
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.SSLCipherSpec
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.queueManagerName
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.replyToQMgr
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.replyToQ
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.validateMaster = contentAndValue
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.securityProfileName
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.policyUrl
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.AddRequestToGroup
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.GroupRequestFolderName
+          manualFaulthandler#TIP082.FAULT.ERRORLOGGING.GroupRequestTimeout
+          manualFaulthandler#Validate.validateMaster = contentAndValue
+          exceptionFaulthandler#UDP_CCSID = 1208
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.queueName = TIP082.FAULT.ERRORLOGGING
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.connection
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.destinationQueueManagerName
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.queueManagerHostname
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.listenerPortNumber
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.channelName
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.securityIdentity
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.useSSL
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.SSLPeerName
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.SSLCipherSpec
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.queueManagerName
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.replyToQMgr
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.replyToQ
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.validateMaster = contentAndValue
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.securityProfileName
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.policyUrl = mqendpointpolicy-dsp
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.AddRequestToGroup
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.GroupRequestFolderName
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.GroupRequestTimeout
+          exceptionFaulthandler#Validate.validateMaster = contentAndValue
+          exceptionFaulthandler#writeFaultEventMessage.dataSource
+          exceptionFaulthandler#writeFaultEventMessage.connectDatasourceBeforeFlowStarts
+          exceptionFaulthandler#writeFaultEventMessage.validateMaster
+          exceptionFaulthandler#exceptionTreeAsXMLNSC.dataSource
+          exceptionFaulthandler#exceptionTreeAsXMLNSC.connectDatasourceBeforeFlowStarts
+          exceptionFaulthandler#exceptionTreeAsXMLNSC.validateMaster
+          exceptionFaulthandler#castToBLOB.validateMaster
+          exceptionFaulthandler#castExceptionBLOBtoEnvString.dataSource
+          exceptionFaulthandler#castExceptionBLOBtoEnvString.connectDatasourceBeforeFlowStarts
+          exceptionFaulthandler#castExceptionBLOBtoEnvString.validateMaster
+          exceptionFaulthandler#inputTreeAsXMLNSC.dataSource
+          exceptionFaulthandler#inputTreeAsXMLNSC.connectDatasourceBeforeFlowStarts
+          exceptionFaulthandler#inputTreeAsXMLNSC.validateMaster
+          exceptionFaulthandler#castToBLOB2.validateMaster
+          exceptionFaulthandler#castInputBLOBtoEnvString.dataSource
+          exceptionFaulthandler#castInputBLOBtoEnvString.connectDatasourceBeforeFlowStarts
+          exceptionFaulthandler#castInputBLOBtoEnvString.validateMaster
+          exceptionFaulthandler#setMQMD.dataSource
+          exceptionFaulthandler#setMQMD.connectDatasourceBeforeFlowStarts
+          exceptionFaulthandler#setMQMD.validateMaster
+          getUpdater#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater
+          getUpdater#HTTP Request.httpVersion = 1.1
+          getUpdater#HTTP Request.protocol = TLS
+          getUpdater#GetDataForLookupFromM3.dataSource = PRODSQLTIP0004
+          getUpdater#GetDataForLookupFromTineESA.dataSource = SQLC10002TINEESA
+          getUpdater#v1/riversand(en_WW).URLSpecifier = http://grunndata-api.tine.no
+          getUpdater#v1/riversand(en_WW).httpVersion = 1.1
+          getUpdater#v1/riversand(en_WW).protocol = TLS
+          getUpdater#v1/riversand.URLSpecifier = http://grunndata-api.tine.no
+          getUpdater#v1/riversand.timeoutForServer = 600
+          getUpdater#v1/riversand.httpVersion = 1.1
+          getUpdater#v1/riversand.protocol = TLS
+          getUpdater#GetProductDataListFromM3.dataSource = PRODSQLTIP0004
+          getUpdater#RouteOnCacheStatus.distributionMode = first
+          getUpdater#RouteOnResponseStatus.distributionMode = first
+          getUpdater#Timeout Notification.uniqueIdentifier = TIP004
+          getUpdater#Timeout Notification.timeoutInterval = 3600
+          getUpdater#tip004/ItemsArray.inputDirectory = /home/aceuser/fileinput
+          getUpdater#PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+          getUpdater#RiversandBase_Path = http://grunndata-api.tine.no
+          getUpdater#tip004/ItemsArray.filenamePattern = itemsarrayDonotFind.json
+          getUpdater#tip004/ItemsArray.messageCodedCharSetIdProperty = 1208
+          getUpdater#GetPreferredSalesUnitFromM3.dataSource = PRODSQLTIP0004
+          getUpdater#GetPreferredBaseUnitFromM3.dataSource = PRODSQLTIP0004
+          getUpdater#GetPreferredBaseUnitFromM.dataSource = PRODSQLTIP0004
+          getUpdater#GetPreferredSalesUnitFromM.dataSource = PRODSQLTIP0004
+          getItems#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper
+          getItems#HTTP Request.httpVersion = 1.1
+          getItems#HTTP Request.protocol = TLS
+          getItems#GetPreferredSalesUnitFromM3.dataSource = PRODSQLTIP0004
+          getItems#GetPreferredBaseUnitFromM3.dataSource = PRODSQLTIP0004
+          getProduct#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper
+          getProduct#HTTP Request.httpVersion = 1.1
+          getProduct#HTTP Request.protocol = TLS
+          TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.queueName = TIP115.UPDATE.PRODUCT.CACHE
+          TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.policyUrl = mqendpointpolicy-dsp
+          TriggerUpdateCache#updateCache.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater
+          getAssortmentCustomerProducts#getWarehouseProductAssortment.dataSource = PRODSQLTIP0004
+          getAssortmentCustomerProducts#getSupplyModelProductAssortment.dataSource = PRODSQLTIP0004
+          getAssortmentCustomerProducts#cusfdbName = CUSEDBPRD
+          discountCheck#getESADiscountAndTypes.dataSource = SQLC10002TINEESA
+          discountCheck#getM3DiscountProducts.dataSource = PRODSQLTIP0004
+          getGuestUserData#getM3GuestProduct.dataSource = PRODSQLTIP0004
+          getGuestUserData#getTine_ESAFilterProductData.dataSource = SQLC10002TINEESA
+          getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+          getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+          getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+          getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+          getItemPerCustomerPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          getItemPerCustomerPrices#HTTP Request.httpVersion = 1.1
+          getItemPerCustomerPrices#HTTP Request.protocol = TLSv1.2
+          getRUserData#GetPromotionalProductsWarehouseFromTineESA.dataSource = SQLC10002TINEESA
+          getRUserData#GetPromotionalProductsForInternalCustomerFromM3.dataSource = PRODSQLTIP0004
+          getRUserData#cusfdbName = CUSEDBPRD
+          getUnitPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          getUnitPrices#HTTP Request.httpVersion = 1.1
+          getUnitPrices#HTTP Request.protocol = TLSv1.2
+          getItemsPerCustomer#GetCustomerFromM3.dataSource = PRODSQLTIP0004
+          getItemsPerCustomer#M3_BasePath = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          getItemsPerCustomer#LoggingUDP = true
+          getItemsPerCustomer#LoggingVerboseUDP = false
+          getItemsPerCustomer#PropertyHttpM3 = Basic VElORVx0aW5laW50OmludHRpbmU=
+          gen.TIP004_MAGENTO_REST#additionalInstances = 3
+          gen.TIP004_MAGENTO_REST#HTTP Input.URLSpecifier = /nettbutikkapi/v1*
+          gen.TIP004_MAGENTO_REST#HTTP Input.faultFormat = HTML
+          gen.TIP004_MAGENTO_REST#getItems (Implementation).PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+          gen.TIP004_MAGENTO_REST#getItems (Implementation).RiversandBase_Path = http://grunndata-api.tine.no
+          gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).M3_BasePath = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).PropertyHttpM3 = Basic VElORVx0aW5laW50OmludHRpbmU=
+          gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).LoggingUDP = true
+          gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).LoggingVerboseUDP = false
+          gen.TIP004_MAGENTO_REST#getUpdater (Implementation).PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+          gen.TIP004_MAGENTO_REST#getUpdater (Implementation).RiversandBase_Path = http://grunndata-api.tine.no
+          getProductWithoutAssortment#getSupplyModelProductWithoutAssortment.dataSource = PRODSQLTIP0004
+          getProductWithoutAssortment#getWarehouseProductWithoutAssortment.dataSource = PRODSQLTIP0004
+          getProductWithoutAssortment#cusfdbName = CUSEDBPRD
+          getProductWithoutAssortmentOKCHK1#getWarehouseProductWithoutAssortmentOKCHK1.dataSource = PRODSQLTIP0004
+          getProductWithoutAssortmentOKCHK1#getSupplyModelProductWithoutAssortmentOKCHK1.dataSource = PRODSQLTIP0004
+          getAssortmentChainProducts#GetM3BusinessChainAssortmentSupplyModelProductData.dataSource = PRODSQLTIP0004
+          getAssortmentChainProducts#getM3BusinessChainAssortmentWarehouseProductData.dataSource = PRODSQLTIP0004
+          getAssortmentChainProducts#GetBusinessChainAssortments.dataSource = PRODSQLTIP0004
+          getAssortmentChainProducts#cusfdbName = CUSEDBPRD
+          getAllAssortmentsPerItem#Get all items in all assortments.dataSource = PRODSQLTIP0004
+          getItemUnitPrices#GetAllAlternativeConversionFactors.dataSource = PRODSQLTIP0004
+          getItemUnitPrices#GetSupplyModelAsMain.dataSource = SQLC10002TINEESA
+          getRegularUserItemData#GetESAPromationalParameters.dataSource = SQLC10002TINEESA
+          getRegularUserItemData#GetM3PromationalProducts.dataSource = PRODSQLTIP0004
+          getRegularUserItemData#cusfdbName = CUSEDBPRD
+          getComparisonUnitPrices#GetComperisonPriceUnitPerItem.dataSource = PRODSQLTIP0004
+          getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+          getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+          getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+          getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+          getComparisonUnitPrices#GetSalesPriceUnitToRunExtraPriceCallFor.dataSource = SQLC10002TINEESA
+          getComparisonUnitPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          getComparisonUnitPrices#HTTP Request.httpVersion = 1.1
+          getComparisonUnitPrices#HTTP Request.protocol = TLSv1.2
+          getAssortmentsPerCustomer#GetCustomerAndAssortmentId.dataSource = PRODSQLTIP0004
+          getBusinessChainData#GetBusinessChain.dataSource = PRODSQLTIP0004
+          getBusinessChainData#GetAndBuildSupplyModel.dataSource = PRODSQLTIP0004
+          getBusinessChainData#GetESALimitedAssortmentUsers.dataSource = SQLC10002TINEESA
+          getBusinessChainRelations#Get all customers and chain relations.dataSource = PRODSQLTIP0004
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.componentLevel = node
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.additionalInstances = 256
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+          HTTPBatchFlow#m3api-rest/v2/execute/.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          HTTPBatchFlow#m3api-rest/v2/execute/.httpVersion = 1.1
+          HTTPBatchFlow#m3api-rest/v2/execute/.securityProfileName = M3API-TIP0004
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+          HTTPBatchFlow#m3api-rest/v2/execute/.protocol = TLSv1.2
+          getAllItemsPerWarehouse#Get warehouse items.dataSource = PRODSQLTIP0004
+          getESATrueFasleFilterData#GetESACanBeDeliveredData.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#getESAExcludeDiscountCampaigns.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#getESAOnlyInWarehouseOrderTypes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#getESANotOPEXOrderTypes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetESANotPromotionalProductsOrderTypes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetESALeadTimeExceptions.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetESALeadTimes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetNoVATCodes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetItemUnits.dataSource = PRODSQLTIP0004
+          getESATrueFasleFilterData#GetTypeException.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetBonusProdukter.baseURL = https://engine.tine.no/prod/internal
+          getESATrueFasleFilterData#GetBonusProdukter.securityIdentity = Millum_key
+    dbGetTypeException.esql (6/15/22 3:23 PM):
+    getProduct.subflow (6/15/22 3:23 PM):
+    loggingEndIntegrationLog.esql (6/15/22 3:23 PM):
+    getAssortmentChainProducts.subflow (6/15/22 3:23 PM):
+    loggingPreM3CallLog.esql (6/15/22 3:23 PM):
+    esqlLogItemsError.esql (6/15/22 3:23 PM):
+    esqlMessageDoesntExists.esql (6/15/22 3:23 PM):
+    getItemPerCustomerPrices_GetComperisonPriceUnitPerItem.esql (6/15/22 3:23 PM):
+    getItems_CheckCache.esql (6/15/22 3:23 PM):
+    esqlMessageExists.esql (6/15/22 3:23 PM):
+    getAllItemsPerWarehouse.subflow (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_GetESALeadTimeExceptions.esql (6/15/22 3:23 PM):
+    gen\TIP004_MAGENTO_REST.msgflow (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_getESAOnlyInWarehouseOrderTypes.esql (6/15/22 3:23 PM):
+    getUpdater_GetPreferredBaseUnitFromM3.esql (6/15/22 3:23 PM):
+    restapi.descriptor (6/15/22 3:23 PM):
+    discountCheck_getM3DiscountProducts.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_ErrorResponse.esql (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_CalculateCanBeDeliveredAtDate.esql (6/15/22 3:23 PM):
+    getBusinessChainRelations.subflow (6/15/22 3:23 PM):
+    TIP000_DataModel.libzip (6/15/22 3:23 PM):
+        library.descriptor (6/15/22 3:07 PM):
+        tine\tip\cdm\contact\TIP000_DataModel_Contact.xsd (6/15/22 3:07 PM):
+        tine\tip\metadata\event_notification\v1\TIP000_DataModel_EventHub.xsd (6/15/22 3:07 PM):
+        TIP000_DataModel_MediaItemTypes.xsd (6/15/22 3:07 PM):
+        tine\tip\metadata\db_event\TIP000_DataModel_DBEvent.xsd (6/15/22 3:07 PM):
+        tine\tip\cdm\customer\v1\TIP000_DataModel_Customer.xsd (6/15/22 3:07 PM):
+        tine\tip\cdm\fault\TIP000_DataModel_Fault_Event.xsd (6/15/22 3:07 PM):
+        tine\tip\cdm\contact\TIP000_DataModel_PAGAOrgUnit.xsd (6/15/22 3:07 PM):
+    getItemsPerCustomer_StoreListOfTINEGavenItems.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer.xsd (6/15/22 3:23 PM):
+    getCustomerAndAssortmentId.esql (6/15/22 3:23 PM):
+    getItems_StoreRiversandData.esql (6/15/22 3:23 PM):
+    esqlIterateOverMsgIds.esql (6/15/22 3:23 PM):
+    getAsortmentCustomerProducts_getM3AssortmentCustomerProductsData.esql (6/15/22 3:23 PM):
+    getUnitPrices.subflow (6/15/22 3:23 PM):
+    getUpdater_GetPreferredSalesUnitFromM3.esql (6/15/22 3:23 PM):
+    getItems_BuildResponsWithProductData.esql (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_GetESALeadTimes.esql (6/15/22 3:23 PM):
+    esqlResponseIntoEnv.esql (6/15/22 3:23 PM):
+    M3Item.xsd (6/15/22 3:23 PM):
+    dbGetItemUnits.esql (6/15/22 3:23 PM):
+    esqlDidMessageExists.esql (6/15/22 3:23 PM):
+    CurrentItem.xsd (6/15/22 3:23 PM):
+    getItemPerCustomerPrices.subflow (6/15/22 3:23 PM):
+    getItemsPerCustomer_MapInputRequestToEnviroment.map (6/15/22 3:23 PM):
+    getItemUnitPrices_GetSupplyModelAsMain.esql (6/15/22 3:23 PM):
+    discountCheck_getESADiscountAndTypes.esql (6/15/22 3:23 PM):
+    getAssortmentChainProducts_GetSupplyModelProductAssortment.esql (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_GetESANotPromotionalProductsOrderTypes.esql (6/15/22 3:23 PM):
+    ProductInformationAggregated.xsd (6/15/22 3:23 PM):
+    esqlStoreMsgId.esql (6/15/22 3:23 PM):
+    getItems_Delete_current_item_from_initial_list.esql (6/15/22 3:23 PM):
+    swagger.json (6/15/22 3:23 PM):
+    getItems_PrepareRiversandAPIRequest.esql (6/15/22 3:23 PM):
+    HTTPBatchFlow_BlobToEnv.esql (6/15/22 3:23 PM):
+    millum-api_v0.yaml (6/15/22 3:23 PM):
+    esqlGetPreferredSalesUnit.esql (6/15/22 3:23 PM):
+    esqlConstructSuccessResponse.esql (6/15/22 3:23 PM):
+    getItems_MapInputRequestToEnviroment.map (6/15/22 3:23 PM):
+    getAssortmentChainProducts_AssortmentLoop.esql (6/15/22 3:23 PM):
+    esqlGetPreferredBaseUnit.esql (6/15/22 3:23 PM):
+    getComparisonUnitPrices_CreateRequest.esql (6/15/22 3:23 PM):
+    getProductWithoutAssortment_getSupplyModelProductWithoutAssortmentOKCHK1.esql (6/15/22 3:23 PM):
+    getRUserData.subflow (6/15/22 3:23 PM):
+    esqlSuccessfullyUpdated.esql (6/15/22 3:23 PM):
+    getItems_FillCacheTimer.esql (6/15/22 3:23 PM):
+    TIP004_MAGENTO_RESTInputCatchHandler.subflow (6/15/22 3:23 PM):
+    esqlLogError.esql (6/15/22 3:23 PM):
+    esqlPrepareResponse.esql (6/15/22 3:23 PM):
+    getProductWithoutAssortment.subflow (6/15/22 3:23 PM):
+    esqlSegmentIntegration.esql (6/15/22 3:23 PM):
+    esqlConvertToJSON.esql (6/15/22 3:23 PM):
+    getRUserData_GetPromotionalProductsForInternalCustomerFromM3.esql (6/15/22 3:23 PM):
+    TriggerUpdateCache.msgflow (6/15/22 3:23 PM):
+    getItems_PrepareRiversandAPIRequestEnglish.esql (6/15/22 3:23 PM):
+    getBusinessChainData_GetESALimitedAssortmentUsers.esql (6/15/22 3:23 PM):
+    getItems_GetProductDataListFromM3.esql (6/15/22 3:23 PM):
+    getAssortmentCustomerProducts_getSupplyModelProductAssortment.esql (6/15/22 3:23 PM):
+    HTTPBatchFlow_logerror.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_WriteErrorMessage.esql (6/15/22 3:23 PM):
+    getItems_GetDataForLookupFromM3.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_GetbusinessChainAssortment.esql (6/15/22 3:23 PM):
+    getItems_Create_final_JSON_output.esql (6/15/22 3:23 PM):
+    HTTPBatchFlow.msgflow (6/15/22 3:23 PM):
+    loggingPreCreateCallLog.esql (6/15/22 3:23 PM):
+    getBusinessChainData_GetBusinessChain.esql (6/15/22 3:23 PM):
+    getItems_GetDataForLookupFromTineESA.esql (6/15/22 3:23 PM):
+    getGuestUserData_GetM3GuestProductFromMITMAS.esql (6/15/22 3:23 PM):
+    loggingPreDbCallLog.esql (6/15/22 3:23 PM):
+    getBusinessChainData_GetAndBuildSupplyModel.esql (6/15/22 3:23 PM):
+    esqlPrintExceptionList.esql (6/15/22 3:23 PM):
+    getRegularUserItemData.subflow (6/15/22 3:23 PM):
+    getProduct_getGtinProduct.esql (6/15/22 3:23 PM):
+    getItemPerCustomerPrices_SortResponse.esql (6/15/22 3:23 PM):
+    esqlGetSpecificItem.esql (6/15/22 3:23 PM):
+    esqlPrepareRequest.esql (6/15/22 3:23 PM):
+    dbGetSalesPriceUnitToRunExtraPriceCallFor.esql (6/15/22 3:23 PM):
+    getItems.xsd (6/15/22 3:23 PM):
+    getItems_LogStop.esql (6/15/22 3:23 PM):
+    {default}esqlLogItemsError.esql (6/15/22 3:23 PM):
+    esqlResponseIntoEnvComparison.esql (6/15/22 3:23 PM):
+    loggingPostM3CallLog.esql (6/15/22 3:23 PM):
+    getItems_GetPreferredSalesUnitFromM3.esql (6/15/22 3:23 PM):
+    getItems_Add_item_to_JSON_output.esql (6/15/22 3:23 PM):
+    getRUserData_GetPromotionalProductsWarehouseFromTineESA.esql (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_GetESACanBeDeliveredData.esql (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_getESANotOPEXOrderTypes.esql (6/15/22 3:23 PM):
+    esqlGetErrorInfo.esql (6/15/22 3:23 PM):
+    getComparisonUnitPrices_GetComperisonPriceUnitPerItem.esql (6/15/22 3:23 PM):
+    tip000-common-logging.libzip (6/15/22 3:23 PM):
+        incomingMQ.subflow (6/15/22 3:23 PM):
+        storeMessage.esql (6/15/22 3:23 PM):
+        outgoingMQ.subflow (6/15/22 3:23 PM):
+        incomingMQMessageHeaderHandler.esql (6/15/22 3:23 PM):
+        incomingHTTPMessageHeaderHandler.esql (6/15/22 3:23 PM):
+        library.descriptor (6/15/22 3:23 PM):
+        incomingFile.subflow (6/15/22 3:23 PM):
+        outgoingHTTP.subflow (6/15/22 3:23 PM):
+        incomingFileMessageHeaderHandler.esql (6/15/22 3:23 PM):
+        commonFormatFuntions.esql (6/15/22 3:23 PM):
+        outgoingMQMessageHeaderHandler.esql (6/15/22 3:23 PM):
+        commonLoggingFunctions.esql (6/15/22 3:23 PM):
+        incomingHTTP.subflow (6/15/22 3:23 PM):
+        outgoingHTTPMessageHandler.esql (6/15/22 3:23 PM):
+        Deployment descriptor:
+          incomingFile#UDP_storeMessage
+          incomingFile#incomingFileMessageHeaderHandler.dataSource
+          incomingFile#incomingFileMessageHeaderHandler.connectDatasourceBeforeFlowStarts
+          incomingFile#incomingFileMessageHeaderHandler.validateMaster
+          incomingFile#storeMessage.dataSource
+          incomingFile#storeMessage.connectDatasourceBeforeFlowStarts
+          incomingFile#storeMessage.validateMaster
+          incomingMQ#UDP_storeMessage = false
+          incomingMQ#incomingMQMessageHeaderHandler.dataSource
+          incomingMQ#incomingMQMessageHeaderHandler.connectDatasourceBeforeFlowStarts
+          incomingMQ#incomingMQMessageHeaderHandler.validateMaster
+          incomingMQ#storeMessage.dataSource
+          incomingMQ#storeMessage.connectDatasourceBeforeFlowStarts
+          incomingMQ#storeMessage.validateMaster
+          incomingHTTP#UDP_storeMessage = false
+          incomingHTTP#incomingHTTPMessageHeaderHandler.dataSource
+          incomingHTTP#incomingHTTPMessageHeaderHandler.connectDatasourceBeforeFlowStarts
+          incomingHTTP#incomingHTTPMessageHeaderHandler.validateMaster
+          incomingHTTP#storeMessage.dataSource
+          incomingHTTP#storeMessage.connectDatasourceBeforeFlowStarts
+          incomingHTTP#storeMessage.validateMaster
+          outgoingHTTP#outgoingHTTPMessageHandler.dataSource
+          outgoingHTTP#outgoingHTTPMessageHandler.connectDatasourceBeforeFlowStarts
+          outgoingHTTP#outgoingHTTPMessageHandler.validateMaster
+          outgoingMQ#outgoingMQMessageHeaderHandler.dataSource
+          outgoingMQ#outgoingMQMessageHeaderHandler.connectDatasourceBeforeFlowStarts
+          outgoingMQ#outgoingMQMessageHeaderHandler.validateMaster
+          getUpdater#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater
+          getUpdater#HTTP Request.httpVersion = 1.1
+          getUpdater#HTTP Request.protocol = TLS
+          getUpdater#GetDataForLookupFromM3.dataSource = PRODSQLTIP0004
+          getUpdater#GetDataForLookupFromTineESA.dataSource = SQLC10002TINEESA
+          getUpdater#v1/riversand(en_WW).URLSpecifier = http://grunndata-api.tine.no
+          getUpdater#v1/riversand(en_WW).httpVersion = 1.1
+          getUpdater#v1/riversand(en_WW).protocol = TLS
+          getUpdater#v1/riversand.URLSpecifier = http://grunndata-api.tine.no
+          getUpdater#v1/riversand.timeoutForServer = 600
+          getUpdater#v1/riversand.httpVersion = 1.1
+          getUpdater#v1/riversand.protocol = TLS
+          getUpdater#GetProductDataListFromM3.dataSource = PRODSQLTIP0004
+          getUpdater#RouteOnCacheStatus.distributionMode = first
+          getUpdater#RouteOnResponseStatus.distributionMode = first
+          getUpdater#Timeout Notification.uniqueIdentifier = TIP004
+          getUpdater#Timeout Notification.timeoutInterval = 3600
+          getUpdater#tip004/ItemsArray.inputDirectory = /home/aceuser/fileinput
+          getUpdater#PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+          getUpdater#RiversandBase_Path = http://grunndata-api.tine.no
+          getUpdater#tip004/ItemsArray.filenamePattern = itemsarrayDonotFind.json
+          getUpdater#tip004/ItemsArray.messageCodedCharSetIdProperty = 1208
+          getUpdater#GetPreferredSalesUnitFromM3.dataSource = PRODSQLTIP0004
+          getUpdater#GetPreferredBaseUnitFromM3.dataSource = PRODSQLTIP0004
+          getUpdater#GetPreferredBaseUnitFromM.dataSource = PRODSQLTIP0004
+          getUpdater#GetPreferredSalesUnitFromM.dataSource = PRODSQLTIP0004
+          getItems#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper
+          getItems#HTTP Request.httpVersion = 1.1
+          getItems#HTTP Request.protocol = TLS
+          getItems#GetPreferredSalesUnitFromM3.dataSource = PRODSQLTIP0004
+          getItems#GetPreferredBaseUnitFromM3.dataSource = PRODSQLTIP0004
+          getProduct#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper
+          getProduct#HTTP Request.httpVersion = 1.1
+          getProduct#HTTP Request.protocol = TLS
+          TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.queueName = TIP115.UPDATE.PRODUCT.CACHE
+          TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.policyUrl = mqendpointpolicy-dsp
+          TriggerUpdateCache#updateCache.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.queueName = TIP082.FAULT.ERRORLOGGING
+          exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.policyUrl = mqendpointpolicy-dsp
+          getAssortmentCustomerProducts#getWarehouseProductAssortment.dataSource = PRODSQLTIP0004
+          getAssortmentCustomerProducts#getSupplyModelProductAssortment.dataSource = PRODSQLTIP0004
+          getAssortmentCustomerProducts#cusfdbName = CUSEDBPRD
+          discountCheck#getESADiscountAndTypes.dataSource = SQLC10002TINEESA
+          discountCheck#getM3DiscountProducts.dataSource = PRODSQLTIP0004
+          getGuestUserData#getM3GuestProduct.dataSource = PRODSQLTIP0004
+          getGuestUserData#getTine_ESAFilterProductData.dataSource = SQLC10002TINEESA
+          getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+          getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+          getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+          getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+          getItemPerCustomerPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          getItemPerCustomerPrices#HTTP Request.httpVersion = 1.1
+          getItemPerCustomerPrices#HTTP Request.protocol = TLSv1.2
+          getRUserData#GetPromotionalProductsWarehouseFromTineESA.dataSource = SQLC10002TINEESA
+          getRUserData#GetPromotionalProductsForInternalCustomerFromM3.dataSource = PRODSQLTIP0004
+          getRUserData#cusfdbName = CUSEDBPRD
+          getUnitPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          getUnitPrices#HTTP Request.httpVersion = 1.1
+          getUnitPrices#HTTP Request.protocol = TLSv1.2
+          getItemsPerCustomer#GetCustomerFromM3.dataSource = PRODSQLTIP0004
+          getItemsPerCustomer#M3_BasePath = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          getItemsPerCustomer#LoggingUDP = true
+          getItemsPerCustomer#LoggingVerboseUDP = false
+          getItemsPerCustomer#PropertyHttpM3 = Basic VElORVx0aW5laW50OmludHRpbmU=
+          gen.TIP004_MAGENTO_REST#additionalInstances = 3
+          gen.TIP004_MAGENTO_REST#HTTP Input.URLSpecifier = /nettbutikkapi/v1*
+          gen.TIP004_MAGENTO_REST#HTTP Input.faultFormat = HTML
+          gen.TIP004_MAGENTO_REST#getItems (Implementation).PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+          gen.TIP004_MAGENTO_REST#getItems (Implementation).RiversandBase_Path = http://grunndata-api.tine.no
+          gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).M3_BasePath = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).PropertyHttpM3 = Basic VElORVx0aW5laW50OmludHRpbmU=
+          gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).LoggingUDP = true
+          gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).LoggingVerboseUDP = false
+          gen.TIP004_MAGENTO_REST#getUpdater (Implementation).PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+          gen.TIP004_MAGENTO_REST#getUpdater (Implementation).RiversandBase_Path = http://grunndata-api.tine.no
+          getProductWithoutAssortment#getSupplyModelProductWithoutAssortment.dataSource = PRODSQLTIP0004
+          getProductWithoutAssortment#getWarehouseProductWithoutAssortment.dataSource = PRODSQLTIP0004
+          getProductWithoutAssortment#cusfdbName = CUSEDBPRD
+          getProductWithoutAssortmentOKCHK1#getWarehouseProductWithoutAssortmentOKCHK1.dataSource = PRODSQLTIP0004
+          getProductWithoutAssortmentOKCHK1#getSupplyModelProductWithoutAssortmentOKCHK1.dataSource = PRODSQLTIP0004
+          getAssortmentChainProducts#GetM3BusinessChainAssortmentSupplyModelProductData.dataSource = PRODSQLTIP0004
+          getAssortmentChainProducts#getM3BusinessChainAssortmentWarehouseProductData.dataSource = PRODSQLTIP0004
+          getAssortmentChainProducts#GetBusinessChainAssortments.dataSource = PRODSQLTIP0004
+          getAssortmentChainProducts#cusfdbName = CUSEDBPRD
+          getAllAssortmentsPerItem#Get all items in all assortments.dataSource = PRODSQLTIP0004
+          getItemUnitPrices#GetAllAlternativeConversionFactors.dataSource = PRODSQLTIP0004
+          getItemUnitPrices#GetSupplyModelAsMain.dataSource = SQLC10002TINEESA
+          getRegularUserItemData#GetESAPromationalParameters.dataSource = SQLC10002TINEESA
+          getRegularUserItemData#GetM3PromationalProducts.dataSource = PRODSQLTIP0004
+          getRegularUserItemData#cusfdbName = CUSEDBPRD
+          getComparisonUnitPrices#GetComperisonPriceUnitPerItem.dataSource = PRODSQLTIP0004
+          getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+          getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+          getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+          getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+          getComparisonUnitPrices#GetSalesPriceUnitToRunExtraPriceCallFor.dataSource = SQLC10002TINEESA
+          getComparisonUnitPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          getComparisonUnitPrices#HTTP Request.httpVersion = 1.1
+          getComparisonUnitPrices#HTTP Request.protocol = TLSv1.2
+          getAssortmentsPerCustomer#GetCustomerAndAssortmentId.dataSource = PRODSQLTIP0004
+          getBusinessChainData#GetBusinessChain.dataSource = PRODSQLTIP0004
+          getBusinessChainData#GetAndBuildSupplyModel.dataSource = PRODSQLTIP0004
+          getBusinessChainData#GetESALimitedAssortmentUsers.dataSource = SQLC10002TINEESA
+          getBusinessChainRelations#Get all customers and chain relations.dataSource = PRODSQLTIP0004
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.componentLevel = node
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.additionalInstances = 256
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+          HTTPBatchFlow#m3api-rest/v2/execute/.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+          HTTPBatchFlow#m3api-rest/v2/execute/.httpVersion = 1.1
+          HTTPBatchFlow#m3api-rest/v2/execute/.securityProfileName = M3API-TIP0004
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+          HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+          HTTPBatchFlow#m3api-rest/v2/execute/.protocol = TLSv1.2
+          getAllItemsPerWarehouse#Get warehouse items.dataSource = PRODSQLTIP0004
+          getESATrueFasleFilterData#GetESACanBeDeliveredData.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#getESAExcludeDiscountCampaigns.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#getESAOnlyInWarehouseOrderTypes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#getESANotOPEXOrderTypes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetESANotPromotionalProductsOrderTypes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetESALeadTimeExceptions.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetESALeadTimes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetNoVATCodes.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetItemUnits.dataSource = PRODSQLTIP0004
+          getESATrueFasleFilterData#GetTypeException.dataSource = SQLC10002TINEESA
+          getESATrueFasleFilterData#GetBonusProdukter.baseURL = https://engine.tine.no/prod/internal
+          getESATrueFasleFilterData#GetBonusProdukter.securityIdentity = Millum_key
+    getItemUnitPrices_GetAllAlternativeConversionFactors.esql (6/15/22 3:23 PM):
+    loggingPostCreateCallLog.esql (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_getESAExcludeDiscountCampaigns.esql (6/15/22 3:23 PM):
+    getItems_LogStart.esql (6/15/22 3:23 PM):
+    HTTPBatchFlow_exceptionToXMLNSC.esql (6/15/22 3:23 PM):
+    HTTPBatchFlow_LogFailure.esql (6/15/22 3:23 PM):
+    getAssortmentChainProducts_BusinessChainLoop.esql (6/15/22 3:23 PM):
+    esqlPrepareItemsResponse.esql (6/15/22 3:23 PM):
+    getESATrueFasleFilterData.subflow (6/15/22 3:23 PM):
+    getProduct_SaveRequestToEnvironment.esql (6/15/22 3:23 PM):
+    getGuestUserData_GetTine_ESAFilterProductDataFromzGuestItems.esql (6/15/22 3:23 PM):
+    getProductWithoutAssortment_getWarehouseProductWithoutAssortmentOKCHK1.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_GetCustomerFromM3.esql (6/15/22 3:23 PM):
+    getAllAssortmentsPerItem_Compute.esql (6/15/22 3:23 PM):
+    getProductWithoutAssortment_getSupplyModelProductWithoutAssortment.esql (6/15/22 3:23 PM):
+    getUnitPrices_CreateRequest.esql (6/15/22 3:23 PM):
+    getUpdater_logException.esql (6/15/22 3:23 PM):
+    getUnitPrices_SortResponse.esql (6/15/22 3:23 PM):
+    LoggingFunctions.esql (6/15/22 3:23 PM):
+    ExtractErrorMessage.esql (6/15/22 3:23 PM):
+    getAssortmentsPerCustomer.subflow (6/15/22 3:23 PM):
+    getAssortmentChainProducts_GetBusinessChainAssortments.esql (6/15/22 3:23 PM):
+    getItems_Enrich_from_tine_esa.esql (6/15/22 3:23 PM):
+    getUpdater_StoreSkuInEnv.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_CreateOutput.esql (6/15/22 3:23 PM):
+    getItemUnitPrices.subflow (6/15/22 3:23 PM):
+    esqlFinalizeSorting.esql (6/15/22 3:23 PM):
+    getItems_GetFromCache.esql (6/15/22 3:23 PM):
+    getAssortmentCustomerProducts.subflow (6/15/22 3:23 PM):
+    getItemUnitPrices_BuildItemList.esql (6/15/22 3:23 PM):
+    getItems_ProxyParams.esql (6/15/22 3:23 PM):
+    getItems_Look_up_M3.esql (6/15/22 3:23 PM):
+    getGuestUserData.subflow (6/15/22 3:23 PM):
+    loggingStartIntegrationLog.esql (6/15/22 3:23 PM):
+    getAssortmentChainProducts_GetM3BusinessChainAssortmentWarehouseProductData.esql (6/15/22 3:23 PM):
+    getItems_Store_EAN_numbers.esql (6/15/22 3:23 PM):
+    getItemPerCustomerPrices_CreateRequest.esql (6/15/22 3:23 PM):
+    getItems_ValidateInputParameter.esql (6/15/22 3:23 PM):
+    getESATrueFasleFilterData_GetNoVATCodes.esql (6/15/22 3:23 PM):
+    esqlCheckIfMessageExists.esql (6/15/22 3:23 PM):
+    getBusinessChainData.subflow (6/15/22 3:23 PM):
+    getBusinessChainData_OnlyLimitedAssortment.esql (6/15/22 3:23 PM):
+    getItems.subflow (6/15/22 3:23 PM):
+    getBusinessChainRelations_Compute.esql (6/15/22 3:23 PM):
+    getAllItemsPerWarehouse_Compute.esql (6/15/22 3:23 PM):
+    esqlSetMQMDHeader.esql (6/15/22 3:23 PM):
+    discountCheck.subflow (6/15/22 3:23 PM):
+    TriggerUpdateCache_LogSuccess.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_GetESAPromationalParameters.esql (6/15/22 3:23 PM):
+    getUpdater.subflow (6/15/22 3:23 PM):
+    esqlFindRelevantBonusProducts.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_GetM3PromationalProducts.esql (6/15/22 3:23 PM):
+    getComparisonUnitPrices_SortResponse.esql (6/15/22 3:23 PM):
+    getComparisonUnitPrices.subflow (6/15/22 3:23 PM):
+    getProductWithoutAssortment_getWarehouseProductWithoutAssortment.esql (6/15/22 3:23 PM):
+    getProduct_getSpecificProduct.esql (6/15/22 3:23 PM):
+    loggingPostDbCallLog.esql (6/15/22 3:23 PM):
+    getItems_Create_output_message.esql (6/15/22 3:23 PM):
+    getProductWithoutAssortmentOKCHK1.subflow (6/15/22 3:23 PM):
+    getAssortmentCustomerProducts_getWarehouseProductAssortment.esql (6/15/22 3:23 PM):
+    esqlSaveMsgId.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer_ControllerNode.esql (6/15/22 3:23 PM):
+    getAllAssortmentsPerItem.subflow (6/15/22 3:23 PM):
+    esqlSetUDPValues.esql (6/15/22 3:23 PM):
+    getItemsPerCustomer.subflow (6/15/22 3:23 PM):
+    getItems_GetPreferredBaseUnitFromM3.esql (6/15/22 3:23 PM):
+    Deployment descriptor:
+      startMode
+      getItemUnitPrices#GetAllAlternativeConversionFactors.dataSource = PRODSQLTIP0004
+      getItemUnitPrices#GetAllAlternativeConversionFactors.connectDatasourceBeforeFlowStarts
+      getItemUnitPrices#GetSupplyModelAsMain.dataSource = SQLC10002TINEESA
+      getItemUnitPrices#GetSupplyModelAsMain.connectDatasourceBeforeFlowStarts
+      getItemUnitPrices#BuildItemList.dataSource
+      getItemUnitPrices#BuildItemList.connectDatasourceBeforeFlowStarts
+      getItemUnitPrices#BuildItemList.validateMaster
+      getItemUnitPrices#FinalizeSorting.dataSource
+      getItemUnitPrices#FinalizeSorting.connectDatasourceBeforeFlowStarts
+      getItemUnitPrices#FinalizeSorting.validateMaster
+      getAllAssortmentsPerItem#Get all items in all assortments.dataSource = PRODSQLTIP0004
+      getAllAssortmentsPerItem#Get all items in all assortments.connectDatasourceBeforeFlowStarts
+      getAllAssortmentsPerItem#Get all items in all assortments.validateMaster
+      getAllAssortmentsPerItem#incomingHTTP.UDP_storeMessage
+      getAssortmentsPerCustomer#GetCustomerAndAssortmentId.dataSource = PRODSQLTIP0004
+      getAssortmentsPerCustomer#GetCustomerAndAssortmentId.connectDatasourceBeforeFlowStarts
+      getAssortmentsPerCustomer#GetCustomerAndAssortmentId.validateMaster
+      getAssortmentsPerCustomer#incomingHTTP.UDP_storeMessage
+      getProductWithoutAssortmentOKCHK1#getSupplyModelProductWithoutAssortmentOKCHK1.dataSource = PRODSQLTIP0004
+      getProductWithoutAssortmentOKCHK1#getSupplyModelProductWithoutAssortmentOKCHK1.connectDatasourceBeforeFlowStarts
+      getProductWithoutAssortmentOKCHK1#getWarehouseProductWithoutAssortmentOKCHK1.dataSource = PRODSQLTIP0004
+      getProductWithoutAssortmentOKCHK1#getWarehouseProductWithoutAssortmentOKCHK1.connectDatasourceBeforeFlowStarts
+      getAllItemsPerWarehouse#Get warehouse items.dataSource = PRODSQLTIP0004
+      getAllItemsPerWarehouse#Get warehouse items.connectDatasourceBeforeFlowStarts
+      getAllItemsPerWarehouse#Get warehouse items.validateMaster
+      getAllItemsPerWarehouse#incomingHTTP.UDP_storeMessage
+      getAssortmentChainProducts#cusfdbName = CUSEDBPRD
+      getAssortmentChainProducts#GetM3BusinessChainAssortmentSupplyModelProductData.dataSource = PRODSQLTIP0004
+      getAssortmentChainProducts#GetM3BusinessChainAssortmentSupplyModelProductData.connectDatasourceBeforeFlowStarts
+      getAssortmentChainProducts#getM3BusinessChainAssortmentWarehouseProductData.dataSource = PRODSQLTIP0004
+      getAssortmentChainProducts#getM3BusinessChainAssortmentWarehouseProductData.connectDatasourceBeforeFlowStarts
+      getAssortmentChainProducts#BusinessChainLoop.dataSource
+      getAssortmentChainProducts#BusinessChainLoop.connectDatasourceBeforeFlowStarts
+      getAssortmentChainProducts#BusinessChainLoop.validateMaster
+      getAssortmentChainProducts#GetBusinessChainAssortments.dataSource = PRODSQLTIP0004
+      getAssortmentChainProducts#GetBusinessChainAssortments.connectDatasourceBeforeFlowStarts
+      getAssortmentChainProducts#AssortmentLoop.dataSource
+      getAssortmentChainProducts#AssortmentLoop.connectDatasourceBeforeFlowStarts
+      getAssortmentChainProducts#AssortmentLoop.validateMaster
+      discountCheck#getESADiscountAndTypes.dataSource = SQLC10002TINEESA
+      discountCheck#getESADiscountAndTypes.connectDatasourceBeforeFlowStarts
+      discountCheck#getM3DiscountProducts.dataSource = PRODSQLTIP0004
+      discountCheck#getM3DiscountProducts.connectDatasourceBeforeFlowStarts
+      discountCheck#makeQueryLists.dataSource
+      discountCheck#makeQueryLists.connectDatasourceBeforeFlowStarts
+      discountCheck#makeQueryLists.validateMaster
+      getGuestUserData#getM3GuestProduct.dataSource = PRODSQLTIP0004
+      getGuestUserData#getM3GuestProduct.connectDatasourceBeforeFlowStarts
+      getGuestUserData#getTine_ESAFilterProductData.dataSource = SQLC10002TINEESA
+      getGuestUserData#getTine_ESAFilterProductData.connectDatasourceBeforeFlowStarts
+      getBusinessChainData#GetBusinessChain.dataSource = PRODSQLTIP0004
+      getBusinessChainData#GetBusinessChain.connectDatasourceBeforeFlowStarts
+      getBusinessChainData#GetAndBuildSupplyModel.dataSource = PRODSQLTIP0004
+      getBusinessChainData#GetAndBuildSupplyModel.connectDatasourceBeforeFlowStarts
+      getBusinessChainData#OnlyLimitedAssortment.dataSource
+      getBusinessChainData#OnlyLimitedAssortment.connectDatasourceBeforeFlowStarts
+      getBusinessChainData#OnlyLimitedAssortment.validateMaster
+      getBusinessChainData#GetESALimitedAssortmentUsers.dataSource = SQLC10002TINEESA
+      getBusinessChainData#GetESALimitedAssortmentUsers.connectDatasourceBeforeFlowStarts
+      getAssortmentCustomerProducts#cusfdbName = CUSEDBPRD
+      getAssortmentCustomerProducts#getWarehouseProductAssortment.dataSource = PRODSQLTIP0004
+      getAssortmentCustomerProducts#getWarehouseProductAssortment.connectDatasourceBeforeFlowStarts
+      getAssortmentCustomerProducts#getSupplyModelProductAssortment.dataSource = PRODSQLTIP0004
+      getAssortmentCustomerProducts#getSupplyModelProductAssortment.connectDatasourceBeforeFlowStarts
+      HTTPBatchFlow#additionalInstances
+      HTTPBatchFlow#notificationThresholdMsgsPerSec
+      HTTPBatchFlow#maximumRateMsgsPerSec
+      HTTPBatchFlow#processingTimeoutSec
+      HTTPBatchFlow#processingTimeoutAction
+      HTTPBatchFlow#wlmPolicy
+      HTTPBatchFlow#commitCount
+      HTTPBatchFlow#commitInterval
+      HTTPBatchFlow#coordinatedTransaction
+      HTTPBatchFlow#consumerPolicySet
+      HTTPBatchFlow#providerPolicySet
+      HTTPBatchFlow#consumerPolicySetBindings
+      HTTPBatchFlow#providerPolicySetBindings
+      HTTPBatchFlow#securityProfileName
+      HTTPBatchFlow#monitoringProfile
+      HTTPBatchFlow#startMode
+      HTTPBatchFlow#startInstancesWhenFlowStarts
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.connection
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.destinationQueueManagerName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.queueManagerHostname
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.listenerPortNumber
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.channelName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.securityIdentity
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.useSSL
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.SSLPeerName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.SSLCipherSpec
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.serializationToken
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.topicProperty
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.resetBrowseTimeout
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.validateMaster
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.securityProfileName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.componentLevel = node
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.additionalInstances = 256
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+      HTTPBatchFlow#ConvertToJSON.dataSource
+      HTTPBatchFlow#ConvertToJSON.connectDatasourceBeforeFlowStarts
+      HTTPBatchFlow#ConvertToJSON.validateMaster
+      HTTPBatchFlow#m3api-rest/v2/execute/.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+      HTTPBatchFlow#m3api-rest/v2/execute/.timeoutForServer = 15
+      HTTPBatchFlow#m3api-rest/v2/execute/.httpProxyLocation
+      HTTPBatchFlow#m3api-rest/v2/execute/.httpVersion = 1.1
+      HTTPBatchFlow#m3api-rest/v2/execute/.enableKeepAlive
+      HTTPBatchFlow#m3api-rest/v2/execute/.requestCompressionType
+      HTTPBatchFlow#m3api-rest/v2/execute/.protocol = TLSv1.2
+      HTTPBatchFlow#m3api-rest/v2/execute/.allowedCiphers
+      HTTPBatchFlow#m3api-rest/v2/execute/.hostnameChecking
+      HTTPBatchFlow#m3api-rest/v2/execute/.keyAlias
+      HTTPBatchFlow#m3api-rest/v2/execute/.enableCRLCheck
+      HTTPBatchFlow#m3api-rest/v2/execute/.acceptCompressedResponses
+      HTTPBatchFlow#m3api-rest/v2/execute/.validateMaster
+      HTTPBatchFlow#m3api-rest/v2/execute/.securityProfileName = M3API-TIP0004
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.connection
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.destinationQueueManagerName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.queueManagerHostname
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.listenerPortNumber
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.channelName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.securityIdentity
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.useSSL
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.SSLPeerName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.SSLCipherSpec
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.queueManagerName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.replyToQMgr
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.replyToQ
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.validateMaster
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.securityProfileName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.AddRequestToGroup
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.GroupRequestFolderName
+      HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE.GroupRequestTimeout
+      HTTPBatchFlow#SaveMsgId.dataSource
+      HTTPBatchFlow#SaveMsgId.connectDatasourceBeforeFlowStarts
+      HTTPBatchFlow#SaveMsgId.validateMaster
+      HTTPBatchFlow#incomingMQ.UDP_storeMessage
+      HTTPBatchFlow#LogFailure.dataSource
+      HTTPBatchFlow#LogFailure.connectDatasourceBeforeFlowStarts
+      HTTPBatchFlow#LogFailure.validateMaster
+      HTTPBatchFlow#exceptionToXMLNSC.dataSource
+      HTTPBatchFlow#exceptionToXMLNSC.connectDatasourceBeforeFlowStarts
+      HTTPBatchFlow#exceptionToXMLNSC.validateMaster
+      HTTPBatchFlow#castToBLOB.validateMaster
+      HTTPBatchFlow#BlobToEnv.dataSource
+      HTTPBatchFlow#BlobToEnv.connectDatasourceBeforeFlowStarts
+      HTTPBatchFlow#BlobToEnv.validateMaster
+      HTTPBatchFlow#incomingMQ1.UDP_storeMessage
+      HTTPBatchFlow#incomingMQ2.UDP_storeMessage
+      getComparisonUnitPrices#GetComperisonPriceUnitPerItem.dataSource = PRODSQLTIP0004
+      getComparisonUnitPrices#GetComperisonPriceUnitPerItem.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#CreateRequest.dataSource
+      getComparisonUnitPrices#CreateRequest.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#CreateRequest.validateMaster
+      getComparisonUnitPrices#PostM3CallLog.dataSource
+      getComparisonUnitPrices#PostM3CallLog.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#PostM3CallLog.validateMaster
+      getComparisonUnitPrices#ResponseIntoEnv.dataSource
+      getComparisonUnitPrices#ResponseIntoEnv.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#ResponseIntoEnv.validateMaster
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.connection
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.destinationQueueManagerName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueManagerHostname
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.listenerPortNumber
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.channelName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.securityIdentity
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.useSSL
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.SSLPeerName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.SSLCipherSpec
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueManagerName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.replyToQMgr
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.replyToQ
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.validateMaster
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.securityProfileName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.AddRequestToGroup
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.GroupRequestFolderName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST.GroupRequestTimeout
+      getComparisonUnitPrices#LoggingPost.distributionMode
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.connection
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.destinationQueueManagerName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.queueManagerHostname
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.listenerPortNumber
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.channelName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.securityIdentity
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.useSSL
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.SSLPeerName
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.SSLCipherSpec
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.validateMaster
+      getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+      getComparisonUnitPrices#StoreMsgId.dataSource
+      getComparisonUnitPrices#StoreMsgId.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#StoreMsgId.validateMaster
+      getComparisonUnitPrices#IterateOverMsgIds.dataSource
+      getComparisonUnitPrices#IterateOverMsgIds.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#IterateOverMsgIds.validateMaster
+      getComparisonUnitPrices#LoggingPre.distributionMode
+      getComparisonUnitPrices#PreM3CallLog.dataSource
+      getComparisonUnitPrices#PreM3CallLog.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#PreM3CallLog.validateMaster
+      getComparisonUnitPrices#SegmentIntegration.dataSource
+      getComparisonUnitPrices#SegmentIntegration.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#SegmentIntegration.validateMaster
+      getComparisonUnitPrices#GetSalesPriceUnitToRunExtraPriceCallFor.dataSource = SQLC10002TINEESA
+      getComparisonUnitPrices#GetSalesPriceUnitToRunExtraPriceCallFor.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#BlobToEnv.dataSource
+      getComparisonUnitPrices#BlobToEnv.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#BlobToEnv.validateMaster
+      getComparisonUnitPrices#LogFailure.dataSource
+      getComparisonUnitPrices#LogFailure.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#LogFailure.validateMaster
+      getComparisonUnitPrices#castToBLOB.validateMaster
+      getComparisonUnitPrices#exceptionToXMLNSC.dataSource
+      getComparisonUnitPrices#exceptionToXMLNSC.connectDatasourceBeforeFlowStarts
+      getComparisonUnitPrices#exceptionToXMLNSC.validateMaster
+      getComparisonUnitPrices#incomingMQ.UDP_storeMessage
+      getComparisonUnitPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+      getComparisonUnitPrices#HTTP Request.httpVersion = 1.1
+      getComparisonUnitPrices#HTTP Request.protocol = TLSv1.2
+      getProduct#incomingHTTP.UDP_storeMessage
+      getProduct#SaveRequestToEnvironment.dataSource
+      getProduct#SaveRequestToEnvironment.connectDatasourceBeforeFlowStarts
+      getProduct#SaveRequestToEnvironment.validateMaster
+      getProduct#GetFromCache.dataSource
+      getProduct#GetFromCache.connectDatasourceBeforeFlowStarts
+      getProduct#GetFromCache.validateMaster
+      getProduct#RouteOnCacheStatus.distributionMode = first
+      getProduct#IsThereEPD.distributionMode = first
+      getProduct#getSpecificProduct.dataSource
+      getProduct#getSpecificProduct.connectDatasourceBeforeFlowStarts
+      getProduct#getSpecificProduct.validateMaster
+      getProduct#IsThereSKU1.distributionMode = first
+      getProduct#getGtinProduct.dataSource
+      getProduct#getGtinProduct.connectDatasourceBeforeFlowStarts
+      getProduct#getGtinProduct.validateMaster
+      getProduct#Params.dataSource
+      getProduct#Params.connectDatasourceBeforeFlowStarts
+      getProduct#Params.validateMaster
+      getProduct#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper
+      getProduct#HTTP Request.timeoutForServer
+      getProduct#HTTP Request.httpProxyLocation
+      getProduct#HTTP Request.httpVersion = 1.1
+      getProduct#HTTP Request.enableKeepAlive
+      getProduct#HTTP Request.requestCompressionType
+      getProduct#HTTP Request.protocol = TLS
+      getProduct#HTTP Request.allowedCiphers
+      getProduct#HTTP Request.hostnameChecking
+      getProduct#HTTP Request.keyAlias
+      getProduct#HTTP Request.enableCRLCheck
+      getProduct#HTTP Request.acceptCompressedResponses
+      getProduct#HTTP Request.validateMaster
+      getProduct#HTTP Request.securityProfileName
+      getProduct#LogStop.dataSource
+      getProduct#LogStop.connectDatasourceBeforeFlowStarts
+      getProduct#LogStop.validateMaster
+      getProductWithoutAssortment#cusfdbName = CUSEDBPRD
+      getProductWithoutAssortment#getSupplyModelProductWithoutAssortment.dataSource = PRODSQLTIP0004
+      getProductWithoutAssortment#getSupplyModelProductWithoutAssortment.connectDatasourceBeforeFlowStarts
+      getProductWithoutAssortment#getWarehouseProductWithoutAssortment.dataSource = PRODSQLTIP0004
+      getProductWithoutAssortment#getWarehouseProductWithoutAssortment.connectDatasourceBeforeFlowStarts
+      getUpdater#PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+      getUpdater#RiversandBase_Path = http://grunndata-api.tine.no
+      getUpdater#PrepareRiversandAPIRequest.dataSource
+      getUpdater#PrepareRiversandAPIRequest.connectDatasourceBeforeFlowStarts
+      getUpdater#PrepareRiversandAPIRequest.validateMaster
+      getUpdater#GetDataForLookupFromM3.dataSource = PRODSQLTIP0004
+      getUpdater#GetDataForLookupFromM3.connectDatasourceBeforeFlowStarts
+      getUpdater#GetDataForLookupFromTineESA.dataSource = SQLC10002TINEESA
+      getUpdater#GetDataForLookupFromTineESA.connectDatasourceBeforeFlowStarts
+      getUpdater#PrepareRiversandAPIRequestEnglish.dataSource
+      getUpdater#PrepareRiversandAPIRequestEnglish.connectDatasourceBeforeFlowStarts
+      getUpdater#PrepareRiversandAPIRequestEnglish.validateMaster
+      getUpdater#v1/riversand(en_WW).URLSpecifier = http://grunndata-api.tine.no
+      getUpdater#v1/riversand(en_WW).timeoutForServer
+      getUpdater#v1/riversand(en_WW).httpProxyLocation
+      getUpdater#v1/riversand(en_WW).httpVersion = 1.1
+      getUpdater#v1/riversand(en_WW).enableKeepAlive
+      getUpdater#v1/riversand(en_WW).requestCompressionType
+      getUpdater#v1/riversand(en_WW).protocol = TLS
+      getUpdater#v1/riversand(en_WW).allowedCiphers
+      getUpdater#v1/riversand(en_WW).hostnameChecking
+      getUpdater#v1/riversand(en_WW).keyAlias
+      getUpdater#v1/riversand(en_WW).enableCRLCheck
+      getUpdater#v1/riversand(en_WW).acceptCompressedResponses
+      getUpdater#v1/riversand(en_WW).validateMaster
+      getUpdater#v1/riversand(en_WW).securityProfileName
+      getUpdater#StoreRiversandData.dataSource
+      getUpdater#StoreRiversandData.connectDatasourceBeforeFlowStarts
+      getUpdater#StoreRiversandData.validateMaster
+      getUpdater#StoreEnglishRiversandData.dataSource
+      getUpdater#StoreEnglishRiversandData.connectDatasourceBeforeFlowStarts
+      getUpdater#StoreEnglishRiversandData.validateMaster
+      getUpdater#v1/riversand.URLSpecifier = http://grunndata-api.tine.no
+      getUpdater#v1/riversand.timeoutForServer = 600
+      getUpdater#v1/riversand.httpProxyLocation
+      getUpdater#v1/riversand.httpVersion = 1.1
+      getUpdater#v1/riversand.enableKeepAlive
+      getUpdater#v1/riversand.requestCompressionType
+      getUpdater#v1/riversand.protocol = TLS
+      getUpdater#v1/riversand.allowedCiphers
+      getUpdater#v1/riversand.hostnameChecking
+      getUpdater#v1/riversand.keyAlias
+      getUpdater#v1/riversand.enableCRLCheck
+      getUpdater#v1/riversand.acceptCompressedResponses
+      getUpdater#v1/riversand.validateMaster
+      getUpdater#v1/riversand.securityProfileName
+      getUpdater#BuildResponsWithProductData.dataSource
+      getUpdater#BuildResponsWithProductData.connectDatasourceBeforeFlowStarts
+      getUpdater#BuildResponsWithProductData.validateMaster
+      getUpdater#GetProductDataListFromM3.dataSource = PRODSQLTIP0004
+      getUpdater#GetProductDataListFromM3.connectDatasourceBeforeFlowStarts
+      getUpdater#WriteErrorMessage.dataSource
+      getUpdater#WriteErrorMessage.connectDatasourceBeforeFlowStarts
+      getUpdater#WriteErrorMessage.validateMaster
+      getUpdater#ConstructSuccessResponse.dataSource
+      getUpdater#ConstructSuccessResponse.connectDatasourceBeforeFlowStarts
+      getUpdater#ConstructSuccessResponse.validateMaster
+      getUpdater#LogItemsError.dataSource
+      getUpdater#LogItemsError.connectDatasourceBeforeFlowStarts
+      getUpdater#LogItemsError.validateMaster
+      getUpdater#SuccessfullyUpdated.dataSource
+      getUpdater#SuccessfullyUpdated.connectDatasourceBeforeFlowStarts
+      getUpdater#SuccessfullyUpdated.validateMaster
+      getUpdater#CheckCache.dataSource
+      getUpdater#CheckCache.connectDatasourceBeforeFlowStarts
+      getUpdater#CheckCache.validateMaster
+      getUpdater#FillCache.dataSource
+      getUpdater#FillCache.connectDatasourceBeforeFlowStarts
+      getUpdater#FillCache.validateMaster
+      getUpdater#RouteOnCacheStatus.distributionMode = first
+      getUpdater#incomingHTTP.UDP_storeMessage
+      getUpdater#Trace.filePath = /home/aceuser/fileoutput/Trace.trc
+      getUpdater#GetPreferredBaseUnitFromM.dataSource = PRODSQLTIP0004
+      getUpdater#GetPreferredBaseUnitFromM.connectDatasourceBeforeFlowStarts
+      getUpdater#GetPreferredSalesUnitFromM.dataSource = PRODSQLTIP0004
+      getUpdater#GetPreferredSalesUnitFromM.connectDatasourceBeforeFlowStarts
+      getUpdater#Compute1.dataSource
+      getUpdater#Compute1.connectDatasourceBeforeFlowStarts
+      getUpdater#Compute1.validateMaster
+      getUpdater#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater
+      getUpdater#HTTP Request.timeoutForServer
+      getUpdater#HTTP Request.httpProxyLocation
+      getUpdater#HTTP Request.httpVersion = 1.1
+      getUpdater#HTTP Request.enableKeepAlive
+      getUpdater#HTTP Request.requestCompressionType
+      getUpdater#HTTP Request.protocol = TLS
+      getUpdater#HTTP Request.allowedCiphers
+      getUpdater#HTTP Request.hostnameChecking
+      getUpdater#HTTP Request.keyAlias
+      getUpdater#HTTP Request.enableCRLCheck
+      getUpdater#HTTP Request.acceptCompressedResponses
+      getUpdater#HTTP Request.validateMaster
+      getUpdater#HTTP Request.securityProfileName
+      getUpdater#LogStop.dataSource
+      getUpdater#LogStop.connectDatasourceBeforeFlowStarts
+      getUpdater#LogStop.validateMaster
+      getUpdater#LogStart.dataSource
+      getUpdater#LogStart.connectDatasourceBeforeFlowStarts
+      getUpdater#LogStart.validateMaster
+      getUpdater#RouteOnResponseStatus.distributionMode = first
+      getUpdater#Timeout Notification.uniqueIdentifier = TIP004
+      getUpdater#Timeout Notification.timeoutInterval = 3600
+      getUpdater#tip004/ItemsArray.inputDirectory = /home/aceuser/fileinput
+      getUpdater#tip004/ItemsArray.filenamePattern = itemsarrayDonotFind.json
+      getUpdater#tip004/ItemsArray.messageCodedCharSetIdProperty = 1208
+      getUpdater#GetPreferredSalesUnitFromM3.dataSource = PRODSQLTIP0004
+      getUpdater#GetPreferredBaseUnitFromM3.dataSource = PRODSQLTIP0004
+      getItems#incomingHTTP.UDP_storeMessage
+      getItems#HTTP Request.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper
+      getItems#HTTP Request.timeoutForServer
+      getItems#HTTP Request.httpProxyLocation
+      getItems#HTTP Request.httpVersion = 1.1
+      getItems#HTTP Request.enableKeepAlive
+      getItems#HTTP Request.requestCompressionType
+      getItems#HTTP Request.protocol = TLS
+      getItems#HTTP Request.allowedCiphers
+      getItems#HTTP Request.hostnameChecking
+      getItems#HTTP Request.keyAlias
+      getItems#HTTP Request.enableCRLCheck
+      getItems#HTTP Request.acceptCompressedResponses
+      getItems#HTTP Request.validateMaster
+      getItems#HTTP Request.securityProfileName
+      getItems#Params.dataSource
+      getItems#Params.connectDatasourceBeforeFlowStarts
+      getItems#Params.validateMaster
+      getItems#LogStop.dataSource
+      getItems#LogStop.connectDatasourceBeforeFlowStarts
+      getItems#LogStop.validateMaster
+      getItems#GetPreferredSalesUnitFromM3.dataSource = PRODSQLTIP0004
+      getItems#GetPreferredBaseUnitFromM3.dataSource = PRODSQLTIP0004
+      getUnitPrices#CreateRequest.dataSource
+      getUnitPrices#CreateRequest.connectDatasourceBeforeFlowStarts
+      getUnitPrices#CreateRequest.validateMaster
+      getUnitPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+      getUnitPrices#HTTP Request.timeoutForServer
+      getUnitPrices#HTTP Request.httpProxyLocation
+      getUnitPrices#HTTP Request.httpVersion = 1.1
+      getUnitPrices#HTTP Request.enableKeepAlive
+      getUnitPrices#HTTP Request.requestCompressionType
+      getUnitPrices#HTTP Request.protocol = TLSv1.2
+      getUnitPrices#HTTP Request.allowedCiphers
+      getUnitPrices#HTTP Request.hostnameChecking
+      getUnitPrices#HTTP Request.keyAlias
+      getUnitPrices#HTTP Request.enableCRLCheck
+      getUnitPrices#HTTP Request.acceptCompressedResponses
+      getUnitPrices#HTTP Request.validateMaster
+      getUnitPrices#HTTP Request.securityProfileName
+      getUnitPrices#SortResponse.dataSource
+      getUnitPrices#SortResponse.connectDatasourceBeforeFlowStarts
+      getUnitPrices#SortResponse.validateMaster
+      getRegularUserItemData#cusfdbName = CUSEDBPRD
+      getRegularUserItemData#OnlyLimited.distributionMode
+      getRegularUserItemData#IsAssortementCustomer.distributionMode
+      getRegularUserItemData#getProductWithoutAssortment.cusfdbName
+      getRegularUserItemData#getAssortmentCustomerProducts.cusfdbName
+      getRegularUserItemData#BusinessChainWithAssortment.distributionMode
+      getRegularUserItemData#getAssortmentChainProducts.cusfdbName
+      getRegularUserItemData#SalesChannel.distributionMode
+      getRegularUserItemData#GetESAPromationalParameters.dataSource = SQLC10002TINEESA
+      getRegularUserItemData#GetESAPromationalParameters.connectDatasourceBeforeFlowStarts
+      getRegularUserItemData#GetM3PromationalProducts.dataSource = PRODSQLTIP0004
+      getRegularUserItemData#GetM3PromationalProducts.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#CreateRequest.dataSource
+      getItemPerCustomerPrices#CreateRequest.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#CreateRequest.validateMaster
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.queueName = TIP004.INTERNAL.BATCH.API.RESPONSE
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.connection
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.destinationQueueManagerName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.queueManagerHostname
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.listenerPortNumber
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.channelName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.securityIdentity
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.useSSL
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.SSLPeerName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.SSLCipherSpec
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.validateMaster
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.RESPONSE.policyUrl = mqendpointpolicy-dsp
+      getItemPerCustomerPrices#ResponseIntoEnv.dataSource
+      getItemPerCustomerPrices#ResponseIntoEnv.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#ResponseIntoEnv.validateMaster
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueName = TIP004.INTERNAL.BATCH.API.REQUEST
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.connection
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.destinationQueueManagerName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueManagerHostname
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.listenerPortNumber
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.channelName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.securityIdentity
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.useSSL
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.SSLPeerName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.SSLCipherSpec
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.queueManagerName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.replyToQMgr
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.replyToQ
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.validateMaster
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.securityProfileName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.policyUrl = mqendpointpolicy-dsp
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.AddRequestToGroup
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.GroupRequestFolderName
+      getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST.GroupRequestTimeout
+      getItemPerCustomerPrices#StoreMsgId.dataSource
+      getItemPerCustomerPrices#StoreMsgId.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#StoreMsgId.validateMaster
+      getItemPerCustomerPrices#SegmentIntegration.dataSource
+      getItemPerCustomerPrices#SegmentIntegration.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#SegmentIntegration.validateMaster
+      getItemPerCustomerPrices#IterateOverMsgIds.dataSource
+      getItemPerCustomerPrices#IterateOverMsgIds.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#IterateOverMsgIds.validateMaster
+      getItemPerCustomerPrices#PreM3CallLog.dataSource
+      getItemPerCustomerPrices#PreM3CallLog.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#PreM3CallLog.validateMaster
+      getItemPerCustomerPrices#LoggingPre.distributionMode
+      getItemPerCustomerPrices#castToBLOB.validateMaster
+      getItemPerCustomerPrices#BlobToEnv.dataSource
+      getItemPerCustomerPrices#BlobToEnv.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#BlobToEnv.validateMaster
+      getItemPerCustomerPrices#exceptionToXMLNSC.dataSource
+      getItemPerCustomerPrices#exceptionToXMLNSC.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#exceptionToXMLNSC.validateMaster
+      getItemPerCustomerPrices#LogFailure.dataSource
+      getItemPerCustomerPrices#LogFailure.connectDatasourceBeforeFlowStarts
+      getItemPerCustomerPrices#LogFailure.validateMaster
+      getItemPerCustomerPrices#incomingMQ.UDP_storeMessage
+      getItemPerCustomerPrices#HTTP Request.URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+      getItemPerCustomerPrices#HTTP Request.httpVersion = 1.1
+      getItemPerCustomerPrices#HTTP Request.protocol = TLSv1.2
+      gen.TIP004_MAGENTO_REST#additionalInstances = 3
+      gen.TIP004_MAGENTO_REST#notificationThresholdMsgsPerSec
+      gen.TIP004_MAGENTO_REST#maximumRateMsgsPerSec
+      gen.TIP004_MAGENTO_REST#processingTimeoutSec
+      gen.TIP004_MAGENTO_REST#processingTimeoutAction
+      gen.TIP004_MAGENTO_REST#wlmPolicy
+      gen.TIP004_MAGENTO_REST#commitCount
+      gen.TIP004_MAGENTO_REST#commitInterval
+      gen.TIP004_MAGENTO_REST#coordinatedTransaction
+      gen.TIP004_MAGENTO_REST#consumerPolicySet
+      gen.TIP004_MAGENTO_REST#providerPolicySet
+      gen.TIP004_MAGENTO_REST#consumerPolicySetBindings
+      gen.TIP004_MAGENTO_REST#providerPolicySetBindings
+      gen.TIP004_MAGENTO_REST#securityProfileName
+      gen.TIP004_MAGENTO_REST#monitoringProfile
+      gen.TIP004_MAGENTO_REST#startMode
+      gen.TIP004_MAGENTO_REST#startInstancesWhenFlowStarts
+      gen.TIP004_MAGENTO_REST#HTTP Input.URLSpecifier = /nettbutikkapi/v1*
+      gen.TIP004_MAGENTO_REST#HTTP Input.useHTTPS
+      gen.TIP004_MAGENTO_REST#HTTP Input.decompressInputMessage
+      gen.TIP004_MAGENTO_REST#HTTP Input.timeoutForClient
+      gen.TIP004_MAGENTO_REST#HTTP Input.faultFormat = HTML
+      gen.TIP004_MAGENTO_REST#HTTP Input.validateMaster
+      gen.TIP004_MAGENTO_REST#HTTP Input.securityProfileName
+      gen.TIP004_MAGENTO_REST#HTTP Reply.validateMaster
+      gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).M3_BasePath = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+      gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).LoggingUDP = true
+      gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).LoggingVerboseUDP = false
+      gen.TIP004_MAGENTO_REST#getUpdater (Implementation).PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+      gen.TIP004_MAGENTO_REST#getUpdater (Implementation).RiversandBase_Path = http://grunndata-api.tine.no
+      gen.TIP004_MAGENTO_REST#getItems (Implementation).PropertyRiversand = YmSWwjl2sl9CpQeqgu5CQKhIx13x6X8V
+      gen.TIP004_MAGENTO_REST#getItems (Implementation).RiversandBase_Path = http://grunndata-api.tine.no
+      gen.TIP004_MAGENTO_REST#getItemsPerCustomer (Implementation).PropertyHttpM3 = Basic VElORVx0aW5laW50OmludHRpbmU=
+      getESATrueFasleFilterData#GetESACanBeDeliveredData.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#GetESACanBeDeliveredData.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#getESAExcludeDiscountCampaigns.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#getESAExcludeDiscountCampaigns.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#getESAOnlyInWarehouseOrderTypes.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#getESAOnlyInWarehouseOrderTypes.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#getESANotOPEXOrderTypes.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#getESANotOPEXOrderTypes.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#GetESANotPromotionalProductsOrderTypes.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#GetESANotPromotionalProductsOrderTypes.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#GetESALeadTimeExceptions.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#GetESALeadTimeExceptions.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#GetESALeadTimes.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#GetESALeadTimes.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#CalculateCanBeDeliveredAtDate.dataSource
+      getESATrueFasleFilterData#CalculateCanBeDeliveredAtDate.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#CalculateCanBeDeliveredAtDate.validateMaster
+      getESATrueFasleFilterData#GetNoVATCodes.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#GetNoVATCodes.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#GetItemUnits.dataSource = PRODSQLTIP0004
+      getESATrueFasleFilterData#GetItemUnits.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#GetTypeException.dataSource = SQLC10002TINEESA
+      getESATrueFasleFilterData#GetTypeException.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#FindRelevantBonusProducts.dataSource
+      getESATrueFasleFilterData#FindRelevantBonusProducts.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#FindRelevantBonusProducts.validateMaster
+      getESATrueFasleFilterData#BonusProductsLogError.dataSource
+      getESATrueFasleFilterData#BonusProductsLogError.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#BonusProductsLogError.validateMaster
+      getESATrueFasleFilterData#GetBonusProdukter.securityIdentity = Millum_key
+      getESATrueFasleFilterData#GetBonusProdukter.timeoutForServer = 1
+      getESATrueFasleFilterData#GetBonusProdukter.baseURL = https://engine.tine.no/prod/internal
+      getESATrueFasleFilterData#GetBonusProdukter.httpProxyLocation
+      getESATrueFasleFilterData#GetBonusProdukter.enableKeepAlive
+      getESATrueFasleFilterData#GetBonusProdukter.requestCompressionType
+      getESATrueFasleFilterData#GetBonusProdukter.protocol = TLSv1.2
+      getESATrueFasleFilterData#GetBonusProdukter.allowedCiphers
+      getESATrueFasleFilterData#GetBonusProdukter.hostnameChecking
+      getESATrueFasleFilterData#GetBonusProdukter.keyAlias
+      getESATrueFasleFilterData#GetBonusProdukter.enableCRLCheck
+      getESATrueFasleFilterData#GetBonusProdukter.acceptCompressedResponses = true
+      getESATrueFasleFilterData#GetBonusProdukter.validateMaster
+      getESATrueFasleFilterData#GetBonusProdukter.securityProfileName
+      getESATrueFasleFilterData#BonusProuctsPrintExceptionList.dataSource
+      getESATrueFasleFilterData#BonusProuctsPrintExceptionList.connectDatasourceBeforeFlowStarts
+      getESATrueFasleFilterData#BonusProuctsPrintExceptionList.validateMaster
+      getRUserData#cusfdbName = CUSEDBPRD
+      getRUserData#GetPromotionalProductsWarehouseFromTineESA.dataSource = SQLC10002TINEESA
+      getRUserData#GetPromotionalProductsWarehouseFromTineESA.connectDatasourceBeforeFlowStarts
+      getRUserData#GetPromotionalProductsForInternalCustomerFromM3.dataSource = PRODSQLTIP0004
+      getRUserData#GetPromotionalProductsForInternalCustomerFromM3.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#M3_BasePath = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/
+      getItemsPerCustomer#LoggingUDP = true
+      getItemsPerCustomer#LoggingVerboseUDP = false
+      getItemsPerCustomer#ControllerNode.dataSource
+      getItemsPerCustomer#ControllerNode.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#ControllerNode.validateMaster
+      getItemsPerCustomer#GetCustomerFromM3.dataSource = PRODSQLTIP0004
+      getItemsPerCustomer#GetCustomerFromM3.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#GuestCustomer.distributionMode
+      getItemsPerCustomer#WriteErrorMessage.dataSource
+      getItemsPerCustomer#WriteErrorMessage.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#WriteErrorMessage.validateMaster
+      getItemsPerCustomer#getRUserData.cusfdbName
+      getItemsPerCustomer#IsUserR.distributionMode
+      getItemsPerCustomer#CreateOutput.dataSource
+      getItemsPerCustomer#CreateOutput.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#CreateOutput.validateMaster
+      getItemsPerCustomer#getRegularUserItemData.cusfdbName
+      getItemsPerCustomer#SetUDPValues.dataSource
+      getItemsPerCustomer#SetUDPValues.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#SetUDPValues.validateMaster
+      getItemsPerCustomer#StartIntegrationLog.dataSource
+      getItemsPerCustomer#StartIntegrationLog.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#StartIntegrationLog.validateMaster
+      getItemsPerCustomer#EndIntegrationLog.dataSource
+      getItemsPerCustomer#EndIntegrationLog.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#EndIntegrationLog.validateMaster
+      getItemsPerCustomer#incomingHTTP.UDP_storeMessage
+      getItemsPerCustomer#Compute.dataSource
+      getItemsPerCustomer#Compute.connectDatasourceBeforeFlowStarts
+      getItemsPerCustomer#Compute.validateMaster
+      getItemsPerCustomer#PropertyHttpM3 = Basic VElORVx0aW5laW50OmludHRpbmU=
+      TriggerUpdateCache#additionalInstances
+      TriggerUpdateCache#notificationThresholdMsgsPerSec
+      TriggerUpdateCache#maximumRateMsgsPerSec
+      TriggerUpdateCache#processingTimeoutSec
+      TriggerUpdateCache#processingTimeoutAction
+      TriggerUpdateCache#wlmPolicy
+      TriggerUpdateCache#commitCount
+      TriggerUpdateCache#commitInterval
+      TriggerUpdateCache#coordinatedTransaction
+      TriggerUpdateCache#consumerPolicySet
+      TriggerUpdateCache#providerPolicySet
+      TriggerUpdateCache#consumerPolicySetBindings
+      TriggerUpdateCache#providerPolicySetBindings
+      TriggerUpdateCache#securityProfileName
+      TriggerUpdateCache#monitoringProfile
+      TriggerUpdateCache#startMode
+      TriggerUpdateCache#startInstancesWhenFlowStarts
+      TriggerUpdateCache#updateCache.URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater
+      TriggerUpdateCache#updateCache.timeoutForServer
+      TriggerUpdateCache#updateCache.httpProxyLocation
+      TriggerUpdateCache#updateCache.httpVersion
+      TriggerUpdateCache#updateCache.enableKeepAlive
+      TriggerUpdateCache#updateCache.requestCompressionType
+      TriggerUpdateCache#updateCache.protocol
+      TriggerUpdateCache#updateCache.allowedCiphers
+      TriggerUpdateCache#updateCache.hostnameChecking
+      TriggerUpdateCache#updateCache.keyAlias
+      TriggerUpdateCache#updateCache.enableCRLCheck
+      TriggerUpdateCache#updateCache.acceptCompressedResponses
+      TriggerUpdateCache#updateCache.validateMaster
+      TriggerUpdateCache#updateCache.securityProfileName
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.queueName = TIP115.UPDATE.PRODUCT.CACHE
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.connection
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.destinationQueueManagerName
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.queueManagerHostname
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.listenerPortNumber
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.channelName
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.securityIdentity
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.useSSL
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.SSLPeerName
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.SSLCipherSpec
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.serializationToken
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.topicProperty
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.resetBrowseTimeout
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.validateMaster
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.securityProfileName
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.componentLevel
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.additionalInstances
+      TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE.policyUrl = mqendpointpolicy-dsp
+      TriggerUpdateCache#LogSuccess.dataSource
+      TriggerUpdateCache#LogSuccess.connectDatasourceBeforeFlowStarts
+      TriggerUpdateCache#LogSuccess.validateMaster
+      TriggerUpdateCache#incomingMQ.UDP_storeMessage
+      TriggerUpdateCache#exceptionFaulthandler.UDP_CCSID
+      getBusinessChainRelations#Get all customers and chain relations.dataSource = PRODSQLTIP0004
+      getBusinessChainRelations#Get all customers and chain relations.connectDatasourceBeforeFlowStarts
+      getBusinessChainRelations#Get all customers and chain relations.validateMaster
+      getBusinessChainRelations#incomingHTTP.UDP_storeMessage
+      TIP004_MAGENTO_RESTInputCatchHandler#ExtractErrorMessage.dataSource
+      TIP004_MAGENTO_RESTInputCatchHandler#ExtractErrorMessage.connectDatasourceBeforeFlowStarts
+      TIP004_MAGENTO_RESTInputCatchHandler#ExtractErrorMessage.validateMaster
+      TIP004_MAGENTO_RESTInputCatchHandler#Trace.filePath = /home/aceuser/fileoutput/CatchHandler.trc
+      exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.queueName = TIP082.FAULT.ERRORLOGGING
+      exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING.policyUrl = mqendpointpolicy-dsp
