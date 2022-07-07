@@ -2,11 +2,19 @@ from os.path import dirname, abspath
 
 def mapNodeToOverrideValue(relevantBarLines, nodeTypesMap):
 
+    nodeTypeIndex = -1
+
     for nodeType in nodeTypesMap:
 
-        newPropertiesArray = []
+        nodeTypeIndex = nodeTypeIndex + 1
+        newNodeArray = []
 
         for node in nodeType[1]:
+            
+            newNode = ["", []]
+            hasPropertyValue = False
+
+            newNode[0] = node[0]
 
             for line in relevantBarLines:
 
@@ -18,11 +26,15 @@ def mapNodeToOverrideValue(relevantBarLines, nodeTypesMap):
 
                     propertyNameValue = propertyName + " = " + propertyValue
 
-                    if (node[1].count(propertyNameValue) == 0):
-                        newPropertiesArray.append(propertyNameValue)
+                    if (newNode[1].count(propertyNameValue) == 0):
+                        newNode[1].append(propertyNameValue)
+                        hasPropertyValue = True
 
-            node[1] = newPropertiesArray
-                    
+            if hasPropertyValue:
+               newNodeArray.append(newNode)
+
+        nodeTypesMap[nodeTypeIndex][1] = newNodeArray
+
     return nodeTypesMap
 
 def findNodeTypes(barfileLines, propertySetLines):
@@ -120,6 +132,14 @@ def readFile(filePath):
 
     return barfile.readlines()
 
+def formatToFileForPOC(nodeTypesWithPropertyValues, filePath):
+
+    rootDir = dirname(dirname(abspath(__file__)))
+
+    with open(rootDir + filePath, "w") as file:
+        for item in nodeTypesWithPropertyValues:
+            file.write("%s\n" % item)   
+
 if __name__ == "__main__":
 
     #TODO Fix UDP functionality
@@ -133,5 +153,7 @@ if __name__ == "__main__":
 
     nodeTypesWithPropertyValues = mapNodeToOverrideValue(relevantBarLines, nodeTypesMap)   
 
-    writeDocToFile("/test/test.txt", nodeTypesWithPropertyValues)
+    formatToFileForPOC(nodeTypesWithPropertyValues, "/test/test.txt")
+
+    #writeDocToFile("/test/test.txt", nodeTypesWithPropertyValues)
 
