@@ -141,15 +141,6 @@ def formatToFileForPOC(nodeListAsDict, filePath):
 
         file.write(json.dumps(nodeListAsDict))
 
-        #for nodeType in nodeListAsDict:
-
-            #file.write("----------------------------------------------------------------------------------------------------\n\n")
-            #file.write(nodeType[0] + ":\n\n")
-            
-            #for node in nodeType[1]:
-                #file.write("\tName: " + node[0] + "\n")
-                #file.write("\tProperties: ")
-
 def nodelist_to_dict(arr):
 
     nodelist = arr
@@ -196,9 +187,4 @@ if __name__ == "__main__":
 
     nodeListAsDict = nodelist_to_dict(nodeTypesWithPropertyValues)
 
-    #print(nodeListAsDict)
-
     formatToFileForPOC(nodeListAsDict, "/test/test.txt")
-
-    #writeDocToFile("/test/test.txt", nodeListAsDict)
-
