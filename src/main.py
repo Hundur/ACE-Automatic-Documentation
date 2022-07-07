@@ -4,7 +4,7 @@ def mapNodeToOverrideValue(relevantBarLines, nodeTypesMap):
 
     for nodeType in nodeTypesMap:
 
-        newNodeArray = []
+        newPropertiesArray = []
 
         for node in nodeType[1]:
 
@@ -18,11 +18,10 @@ def mapNodeToOverrideValue(relevantBarLines, nodeTypesMap):
 
                     propertyNameValue = propertyName + " = " + propertyValue
 
-                    if node[1].count(propertyNameValue) == 0:
-                        node[1].append(propertyNameValue)  
-                        newNodeArray.append(node)
+                    if (node[1].count(propertyNameValue) == 0):
+                        newPropertiesArray.append(propertyNameValue)
 
-        nodeType[1] = newNodeArray
+            node[1] = newPropertiesArray
                     
     return nodeTypesMap
 
