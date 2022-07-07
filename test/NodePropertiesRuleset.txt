@@ -2,7 +2,7 @@ COMPUTE:
     connectDatasourceBeforeFlowStarts
 	dataSource
     validateMaster
-MQ:
+MQINPUT:
 	SSLCipherSpec
 	SSLPeerName
 	additionalInstances
@@ -19,6 +19,26 @@ MQ:
 	securityProfileName
 	serializationToken
 	topicProperty
+	useSSL
+	validateMaster
+MQOUTPUT/MQGET:
+	AddRequestToGroup
+	GroupRequestFolderName
+	GroupRequestTimeout
+	SSLCipherSpec
+	SSLPeerName
+	channelName
+	connection
+	destinationQueueManagerName
+	listenerPortNumber
+	policyUrl
+	queueManagerHostname
+	queueManagerName
+	queueName
+	replyToQ
+	replyToQMgr
+	securityIdentity
+	securityProfileName
 	useSSL
 	validateMaster
 HTTP:

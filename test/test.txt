@@ -1,5 +1,225 @@
-['COMPUTE', [['getAllAssortmentsPerItem#Get all items in all assortments', ['dataSource = PRODSQLTIP0004']], ['getAllItemsPerWarehouse#Get warehouse items', ['dataSource = PRODSQLTIP0004']], ['getAssortmentsPerCustomer#GetCustomerAndAssortmentId', ['dataSource = PRODSQLTIP0004']], ['getBusinessChainRelations#Get all customers and chain relations', ['dataSource = PRODSQLTIP0004']]]]
-['MQ', [['HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST', ['additionalInstances = 256', 'componentLevel = node', 'policyUrl = mqendpointpolicy-dsp', 'queueName = TIP004.INTERNAL.BATCH.API.REQUEST']], ['TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE', ['policyUrl = mqendpointpolicy-dsp', 'queueName = TIP115.UPDATE.PRODUCT.CACHE']]]]
-['HTTP', [['HTTPBatchFlow#m3api-rest/v2/execute/', ['URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/', 'httpVersion = 1.1', 'protocol = TLSv1.2', 'securityProfileName = M3API-TIP0004', 'timeoutForServer = 15']], ['TriggerUpdateCache#updateCache', ['URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater']], ['getItems#HTTP Request', ['URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper', 'httpVersion = 1.1', 'protocol = TLS']], ['getProduct#HTTP Request', ['URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper', 'httpVersion = 1.1', 'protocol = TLS']], ['getUnitPrices#HTTP Request', ['URLSpecifier = https://m3p10001.tine.no:19008/m3api-rest/v2/execute/', 'httpVersion = 1.1', 'protocol = TLSv1.2']], ['getUpdater#HTTP Request', ['URLSpecifier = http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater', 'httpVersion = 1.1', 'protocol = TLS']], ['getUpdater#v1/riversand(en_WW)', ['URLSpecifier = http://grunndata-api.tine.no', 'httpVersion = 1.1', 'protocol = TLS']], ['getUpdater#v1/riversand', ['URLSpecifier = http://grunndata-api.tine.no', 'httpVersion = 1.1', 'protocol = TLS', 'timeoutForServer = 600']]]]
-['DB', [['discountCheck#getESADiscountAndTypes', ['dataSource = SQLC10002TINEESA']], ['discountCheck#getM3DiscountProducts', ['dataSource = PRODSQLTIP0004']], ['getAssortmentChainProducts#GetBusinessChainAssortments', ['dataSource = PRODSQLTIP0004']], ['getAssortmentChainProducts#GetM3BusinessChainAssortmentSupplyModelProductData', ['dataSource = PRODSQLTIP0004']], ['getAssortmentChainProducts#getM3BusinessChainAssortmentWarehouseProductData', ['dataSource = PRODSQLTIP0004']], ['getAssortmentCustomerProducts#getSupplyModelProductAssortment', ['dataSource = PRODSQLTIP0004']], ['getAssortmentCustomerProducts#getWarehouseProductAssortment', ['dataSource = PRODSQLTIP0004']], ['getBusinessChainData#GetAndBuildSupplyModel', ['dataSource = PRODSQLTIP0004']], ['getBusinessChainData#GetBusinessChain', ['dataSource = PRODSQLTIP0004']], ['getBusinessChainData#GetESALimitedAssortmentUsers', ['dataSource = SQLC10002TINEESA']], ['getComparisonUnitPrices#GetComperisonPriceUnitPerItem', ['dataSource = PRODSQLTIP0004']], ['getComparisonUnitPrices#GetSalesPriceUnitToRunExtraPriceCallFor', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#GetESACanBeDeliveredData', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#GetESALeadTimeExceptions', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#GetESALeadTimes', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#GetESANotPromotionalProductsOrderTypes', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#GetItemUnits', ['dataSource = PRODSQLTIP0004']], ['getESATrueFasleFilterData#GetNoVATCodes', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#GetTypeException', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#getESAExcludeDiscountCampaigns', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#getESANotOPEXOrderTypes', ['dataSource = SQLC10002TINEESA']], ['getESATrueFasleFilterData#getESAOnlyInWarehouseOrderTypes', ['dataSource = SQLC10002TINEESA']], ['getGuestUserData#getM3GuestProduct', ['dataSource = PRODSQLTIP0004']], ['getGuestUserData#getTine_ESAFilterProductData', ['dataSource = SQLC10002TINEESA']], ['getItemUnitPrices#GetAllAlternativeConversionFactors', ['dataSource = PRODSQLTIP0004']], ['getItemUnitPrices#GetSupplyModelAsMain', ['dataSource = SQLC10002TINEESA']], ['getItemsPerCustomer#GetCustomerFromM3', ['dataSource = PRODSQLTIP0004']], ['getProductWithoutAssortment#getSupplyModelProductWithoutAssortment', ['dataSource = PRODSQLTIP0004']], ['getProductWithoutAssortment#getWarehouseProductWithoutAssortment', ['dataSource = PRODSQLTIP0004']], ['getProductWithoutAssortmentOKCHK1#getSupplyModelProductWithoutAssortmentOKCHK1', ['dataSource = PRODSQLTIP0004']], ['getProductWithoutAssortmentOKCHK1#getWarehouseProductWithoutAssortmentOKCHK1', ['dataSource = PRODSQLTIP0004']], ['getRUserData#GetPromotionalProductsForInternalCustomerFromM3', ['dataSource = PRODSQLTIP0004']], ['getRUserData#GetPromotionalProductsWarehouseFromTineESA', ['dataSource = SQLC10002TINEESA']], ['getRegularUserItemData#GetESAPromationalParameters', ['dataSource = SQLC10002TINEESA']], ['getRegularUserItemData#GetM3PromationalProducts', ['dataSource = PRODSQLTIP0004']], ['getUpdater#GetDataForLookupFromM3', ['dataSource = PRODSQLTIP0004']], ['getUpdater#GetDataForLookupFromTineESA', ['dataSource = SQLC10002TINEESA']], ['getUpdater#GetPreferredBaseUnitFromM', ['dataSource = PRODSQLTIP0004']], ['getUpdater#GetPreferredSalesUnitFromM', ['dataSource = PRODSQLTIP0004']], ['getUpdater#GetProductDataListFromM3', ['dataSource = PRODSQLTIP0004']]]]
-['REST', [['getESATrueFasleFilterData#GetBonusProdukter', ['acceptCompressedResponses = true', 'baseURL = https://engine.tine.no/prod/internal', 'protocol = TLSv1.2', 'securityIdentity = Millum_key', 'timeoutForServer = 1']]]]
+{
+	"COMPUTE": {
+		"getAllAssortmentsPerItem#Get all items in all assortments": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getAllItemsPerWarehouse#Get warehouse items": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getAssortmentsPerCustomer#GetCustomerAndAssortmentId": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getBusinessChainRelations#Get all customers and chain relations": {
+			"dataSource": "PRODSQLTIP0004"
+		}
+	},
+	"MQINPUT": {
+		"HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.REQUEST": {
+			"additionalInstances": "256",
+			"componentLevel": "node",
+			"policyUrl": "mqendpointpolicy-dsp",
+			"queueName": "TIP004.INTERNAL.BATCH.API.REQUEST"
+		},
+		"TriggerUpdateCache#TIP115.UPDATE.PRODUCT.CACHE": {
+			"policyUrl": "mqendpointpolicy-dsp",
+			"queueName": "TIP115.UPDATE.PRODUCT.CACHE"
+		}
+	},
+	"MQOUTPUT/MQGET": {
+		"HTTPBatchFlow#TIP004.INTERNAL.BATCH.API.RESPONSE": {
+			"policyUrl": "mqendpointpolicy-dsp",
+			"queueName": "TIP004.INTERNAL.BATCH.API.RESPONSE"
+		},
+		"exceptionFaulthandler#TIP082.FAULT.ERRORLOGGING": {
+			"policyUrl": "mqendpointpolicy-dsp",
+			"queueName": "TIP082.FAULT.ERRORLOGGING",
+			"validateMaster": "contentAndValue"
+		},
+		"getComparisonUnitPrices#TIP004.INTERNAL.BATCH.API.REQUEST": {
+			"policyUrl": "mqendpointpolicy-dsp",
+			"queueName": "TIP004.INTERNAL.BATCH.API.REQUEST"
+		},
+		"getItemPerCustomerPrices#TIP004.INTERNAL.BATCH.API.REQUEST": {
+			"policyUrl": "mqendpointpolicy-dsp",
+			"queueName": "TIP004.INTERNAL.BATCH.API.REQUEST"
+		},
+		"manualFaulthandler#TIP082.FAULT.ERRORLOGGING": {
+			"queueName": "TIP082.FAULT.ERRORLOGGING",
+			"validateMaster": "contentAndValue"
+		}
+	},
+	"HTTP": {
+		"HTTPBatchFlow#m3api-rest/v2/execute/": {
+			"URLSpecifier": "https://m3p10001.tine.no:19008/m3api-rest/v2/execute/",
+			"httpVersion": "1.1",
+			"protocol": "TLSv1.2",
+			"securityProfileName": "M3API-TIP0004",
+			"timeoutForServer": "15"
+		},
+		"TriggerUpdateCache#updateCache": {
+			"URLSpecifier": "http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater"
+		},
+		"getItems#HTTP Request": {
+			"URLSpecifier": "http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper",
+			"httpVersion": "1.1",
+			"protocol": "TLS"
+		},
+		"getProduct#HTTP Request": {
+			"URLSpecifier": "http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/cachehelper",
+			"httpVersion": "1.1",
+			"protocol": "TLS"
+		},
+		"getUnitPrices#HTTP Request": {
+			"URLSpecifier": "https://m3p10001.tine.no:19008/m3api-rest/v2/execute/",
+			"httpVersion": "1.1",
+			"protocol": "TLSv1.2"
+		},
+		"getUpdater#HTTP Request": {
+			"URLSpecifier": "http://dsp-productcache-http-ace.cpi.prod.ocp.tine.no/tip115_AceAssortmentCacheService/v1/items/updater",
+			"httpVersion": "1.1",
+			"protocol": "TLS"
+		},
+		"getUpdater#v1/riversand(en_WW)": {
+			"URLSpecifier": "http://grunndata-api.tine.no",
+			"httpVersion": "1.1",
+			"protocol": "TLS"
+		},
+		"getUpdater#v1/riversand": {
+			"URLSpecifier": "http://grunndata-api.tine.no",
+			"httpVersion": "1.1",
+			"protocol": "TLS",
+			"timeoutForServer": "600"
+		}
+	},
+	"DB": {
+		"discountCheck#getESADiscountAndTypes": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"discountCheck#getM3DiscountProducts": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getAssortmentChainProducts#GetBusinessChainAssortments": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getAssortmentChainProducts#GetM3BusinessChainAssortmentSupplyModelProductData": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getAssortmentChainProducts#getM3BusinessChainAssortmentWarehouseProductData": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getAssortmentCustomerProducts#getSupplyModelProductAssortment": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getAssortmentCustomerProducts#getWarehouseProductAssortment": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getBusinessChainData#GetAndBuildSupplyModel": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getBusinessChainData#GetBusinessChain": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getBusinessChainData#GetESALimitedAssortmentUsers": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getComparisonUnitPrices#GetComperisonPriceUnitPerItem": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getComparisonUnitPrices#GetSalesPriceUnitToRunExtraPriceCallFor": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#GetESACanBeDeliveredData": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#GetESALeadTimeExceptions": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#GetESALeadTimes": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#GetESANotPromotionalProductsOrderTypes": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#GetItemUnits": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getESATrueFasleFilterData#GetNoVATCodes": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#GetTypeException": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#getESAExcludeDiscountCampaigns": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#getESANotOPEXOrderTypes": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getESATrueFasleFilterData#getESAOnlyInWarehouseOrderTypes": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getGuestUserData#getM3GuestProduct": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getGuestUserData#getTine_ESAFilterProductData": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getItemUnitPrices#GetAllAlternativeConversionFactors": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getItemUnitPrices#GetSupplyModelAsMain": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getItemsPerCustomer#GetCustomerFromM3": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getProductWithoutAssortment#getSupplyModelProductWithoutAssortment": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getProductWithoutAssortment#getWarehouseProductWithoutAssortment": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getProductWithoutAssortmentOKCHK1#getSupplyModelProductWithoutAssortmentOKCHK1": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getProductWithoutAssortmentOKCHK1#getWarehouseProductWithoutAssortmentOKCHK1": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getRUserData#GetPromotionalProductsForInternalCustomerFromM3": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getRUserData#GetPromotionalProductsWarehouseFromTineESA": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getRegularUserItemData#GetESAPromationalParameters": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getRegularUserItemData#GetM3PromationalProducts": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getUpdater#GetDataForLookupFromM3": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getUpdater#GetDataForLookupFromTineESA": {
+			"dataSource": "SQLC10002TINEESA"
+		},
+		"getUpdater#GetPreferredBaseUnitFromM": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getUpdater#GetPreferredSalesUnitFromM": {
+			"dataSource": "PRODSQLTIP0004"
+		},
+		"getUpdater#GetProductDataListFromM3": {
+			"dataSource": "PRODSQLTIP0004"
+		}
+	},
+	"REST": {
+		"getESATrueFasleFilterData#GetBonusProdukter": {
+			"acceptCompressedResponses": "true",
+			"baseURL": "https://engine.tine.no/prod/internal",
+			"protocol": "TLSv1.2",
+			"securityIdentity": "Millum_key",
+			"timeoutForServer": "1"
+		}
+	}
+}

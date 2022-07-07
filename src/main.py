@@ -1,4 +1,5 @@
 from os.path import dirname, abspath
+import json
 
 def mapNodeToOverrideValue(relevantBarLines, nodeTypesMap):
 
@@ -112,7 +113,7 @@ def findRelevantLines(barfileLines):
     relevantLines=[]
     
     for line in barfileLines:
-        if "propertyIdentifier" and "#" in line:
+        if "." in line:
             relevantLines.append(line.strip())
 
     return sorted(relevantLines)
@@ -132,13 +133,53 @@ def readFile(filePath):
 
     return barfile.readlines()
 
-def formatToFileForPOC(nodeTypesWithPropertyValues, filePath):
+def formatToFileForPOC(nodeListAsDict, filePath):
 
     rootDir = dirname(dirname(abspath(__file__)))
 
     with open(rootDir + filePath, "w") as file:
-        for item in nodeTypesWithPropertyValues:
-            file.write("%s\n" % item)   
+
+        file.write(json.dumps(nodeListAsDict))
+
+        #for nodeType in nodeListAsDict:
+
+            #file.write("----------------------------------------------------------------------------------------------------\n\n")
+            #file.write(nodeType[0] + ":\n\n")
+            
+            #for node in nodeType[1]:
+                #file.write("\tName: " + node[0] + "\n")
+                #file.write("\tProperties: ")
+
+def nodelist_to_dict(arr):
+
+    nodelist = arr
+    node_dict = {}
+
+    for line in nodelist:
+        node_dict[line[0]] = line[1]
+
+    for key, value in node_dict.items():
+
+        value_dict = {}
+
+        for k, v in value:
+
+            value_dict[k] = v
+
+        for k, v in value_dict.items():
+
+            prop_dict = {}
+
+            for element in v:
+
+                split = element.split(" = ")
+                prop_dict[split[0]] = split[1]
+
+            value_dict[k] = prop_dict
+
+        node_dict[key] = value_dict
+
+    return node_dict
 
 if __name__ == "__main__":
 
@@ -153,7 +194,11 @@ if __name__ == "__main__":
 
     nodeTypesWithPropertyValues = mapNodeToOverrideValue(relevantBarLines, nodeTypesMap)   
 
-    formatToFileForPOC(nodeTypesWithPropertyValues, "/test/test.txt")
+    nodeListAsDict = nodelist_to_dict(nodeTypesWithPropertyValues)
 
-    #writeDocToFile("/test/test.txt", nodeTypesWithPropertyValues)
+    #print(nodeListAsDict)
+
+    formatToFileForPOC(nodeListAsDict, "/test/test.txt")
+
+    #writeDocToFile("/test/test.txt", nodeListAsDict)
 
