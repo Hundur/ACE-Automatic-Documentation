@@ -172,12 +172,7 @@ def nodelist_to_dict(arr):
 
     return node_dict
 
-if __name__ == "__main__":
-
-    #TODO Fix UDP functionality
-
-    barfileLines = readFile("/test/Testbarfile.txt")
-    nodePropertySetLines = readFile("/test/NodePropertiesRuleset.txt")
+def getPropertiesFromBar(bar, properties):
     
     relevantBarLines = findRelevantLines(barfileLines)
 
@@ -187,4 +182,15 @@ if __name__ == "__main__":
 
     nodeListAsDict = nodelist_to_dict(nodeTypesWithPropertyValues)
 
-    formatToFileForPOC(nodeListAsDict, "/test/test.txt")
+    return nodeListAsDict
+
+if __name__ == "__main__":
+
+    #TODO Fix UDP functionality
+
+    barfileLines = readFile("/test/Testbarfile.txt")
+    nodePropertySetLines = readFile("/test/NodePropertiesRuleset.txt")
+    
+    nodeListAsDict = getPropertiesFromBar(barfileLines, nodePropertySetLines)
+
+    formatToFileForPOC(nodeListAsDict, "/test/test.json")
