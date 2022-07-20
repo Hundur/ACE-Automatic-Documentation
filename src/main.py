@@ -1,60 +1,50 @@
-from os.path import dirname, abspath
+from os.path import dirname, abspath, realpath
 import json
+import yaml
+import sys
+import time
 
 def mapNodeToOverrideValue(relevantBarLines, nodeTypesMap):
-
-    nodeTypeIndex = -1
-
-    for nodeType in nodeTypesMap:
-
-        nodeTypeIndex = nodeTypeIndex + 1
-        newNodeArray = []
-
-        for node in nodeType[1]:
-            
-            newNode = ["", []]
-            hasPropertyValue = False
-
-            newNode[0] = node[0]
+    nodeTypesDict = {}
+    for nodetypeKey, nodetypeValue in nodeTypesMap.items():
+        newNodeDict = {}
+        for node in nodetypeValue:
+            newNode = {}
 
             for line in relevantBarLines:
 
-                if (node[0] in line) and (" = " in line) and ("." in line):
+                if (node in line) and (" = " in line):
 
                     splitArray = line.rsplit(" = ", 1)
-                    propertyName = splitArray[0].rsplit(".", 1)[1]
-                    propertyValue = splitArray[1]
+                    
+                    propertyNameSplit = splitArray[0].rsplit(".", 1)
+                    
+                    # Handle UDP
+                    if len(propertyNameSplit) == 1:
+                        if "UDP" not in nodeTypesDict:
+                            nodeTypesDict["UDP"] = {}            
+                        if node not in nodeTypesDict["UDP"]:
+                            nodeTypesDict["UDP"][node] = {}
+                        nodeTypesDict["UDP"][node][propertyNameSplit[0]] = propertyValue
+                    else:
+                        propertyName = propertyNameSplit[1]
 
-                    propertyNameValue = propertyName + " = " + propertyValue
+                        propertyValue = splitArray[1]
 
-                    if (newNode[1].count(propertyNameValue) == 0):
-                        newNode[1].append(propertyNameValue)
-                        hasPropertyValue = True
+                        newNode[propertyName] = propertyValue
+            if newNode:
+                newNodeDict[node] = newNode
+        if newNodeDict:
+            nodeTypesDict[nodetypeKey] = newNodeDict
+     
+    return nodeTypesDict
 
-            if hasPropertyValue:
-               newNodeArray.append(newNode)
-
-        nodeTypesMap[nodeTypeIndex][1] = newNodeArray
-
-    return nodeTypesMap
-
-def findNodeTypes(barfileLines, propertySetLines):
-
-    listIndex = -1
-    propertySetList = []
+def findNodeTypes(barfileLines, propertySetDict):
 
     # Makes ruleset into a more usable list
-    for line in propertySetLines:
-        if ":" in line:
-            listIndex = listIndex + 1
-            propertySetList.append([line.split(":")[0], []])
-        else:
-            propertySetList[listIndex][1].append(line.strip())
-
-    firstEntry = True
-    listIndex = -1
-    nodeList = []
-
+    
+    nodeDict = {}
+    
     # Makes an array that has nodenames and all their respected properties
     for line in barfileLines:
 
@@ -66,47 +56,27 @@ def findNodeTypes(barfileLines, propertySetLines):
             splitArray = line.rsplit(".", 1)
             nodeName = splitArray[0].strip()
             propertyName = splitArray[1].strip()
+            if nodeName in nodeDict:
+                if propertyName not in nodeDict[nodeName]:
+                    nodeDict[nodeName] += [propertyName] 
+            else:
+                nodeDict[nodeName] = [propertyName]
+    
 
-            if firstEntry:
-                currentName = nodeName
-                firstEntry = False
-
-                listIndex = listIndex + 1
-                nodeList.append([nodeName, []])
-            
-            if currentName != nodeName:
-                currentName = nodeName
-
-                listIndex = listIndex + 1
-                nodeList.append([nodeName, []])
-
-            if nodeList[listIndex][1].count(propertyName) == 0:
-                nodeList[listIndex][1].append(propertyName)
-
-    nodeTypeList = []
-    existsInArray = False
-
+    nodeTypeDict = {}
     # Finds what nodes are what based on checking nodeproperties against the propertySet
-    for node in nodeList:
-        for propertySet in propertySetList:
-
-            if node[1] == propertySet[1]:
-
-                existsInArray = False
-                listIndex = -1
-
-                for item in nodeTypeList:
-
-                    listIndex = listIndex + 1
-
-                    if item[0] == propertySet[0]:
-                        existsInArray = True
-                        nodeTypeList[listIndex][1].append([node[0], []])
-
-                if not existsInArray:
-                    nodeTypeList.append([propertySet[0], [[node[0], []]]])
-
-    return nodeTypeList
+    for nodeKey, nodeValue in nodeDict.items():
+        sortedValue = sorted(nodeValue)
+        for propertyKey, propertyValue in propertySetDict.items():
+            if propertyValue == sortedValue:
+    
+                if propertyKey in nodeTypeDict:
+                    if nodeKey not in nodeTypeDict[propertyKey]:
+                        nodeTypeDict[propertyKey] += [nodeKey]
+                else:
+                    nodeTypeDict[propertyKey] = [nodeKey]
+    
+    return nodeTypeDict
 
 def findRelevantLines(barfileLines):
 
@@ -118,79 +88,45 @@ def findRelevantLines(barfileLines):
 
     return sorted(relevantLines)
 
-def writeDocToFile(filePath, txtToWriteArray):
-
-    rootDir = dirname(dirname(abspath(__file__)))
-
-    with open(rootDir + filePath, "w") as file:
-        for item in txtToWriteArray:
-            file.write("%s\n" % item)
-
-def readFile(filePath):
-
-    rootDir = dirname(dirname(abspath(__file__)))   
-    barfile = open(rootDir + filePath, "r")
-
-    return barfile.readlines()
 
 def formatToFileForPOC(nodeListAsDict, filePath):
 
-    rootDir = dirname(dirname(abspath(__file__)))
+    with open(filePath, "w") as file:
 
-    with open(rootDir + filePath, "w") as file:
+        file.write(json.dumps(nodeListAsDict, indent=4))
 
-        file.write(json.dumps(nodeListAsDict))
 
-def nodelist_to_dict(arr):
-
-    nodelist = arr
-    node_dict = {}
-
-    for line in nodelist:
-        node_dict[line[0]] = line[1]
-
-    for key, value in node_dict.items():
-
-        value_dict = {}
-
-        for k, v in value:
-
-            value_dict[k] = v
-
-        for k, v in value_dict.items():
-
-            prop_dict = {}
-
-            for element in v:
-
-                split = element.split(" = ")
-                prop_dict[split[0]] = split[1]
-
-            value_dict[k] = prop_dict
-
-        node_dict[key] = value_dict
-
-    return node_dict
-
-def getPropertiesFromBar(bar, properties):
+def getPropertiesFromBar(barPath, propertiesPath):
     
-    relevantBarLines = findRelevantLines(barfileLines)
+    with open(barPath) as barfile:
+        bar =  barfile.readlines()
 
-    nodeTypesMap = findNodeTypes(relevantBarLines, nodePropertySetLines)
+    with open(propertiesPath) as propfile:
+        properties = yaml.safe_load(propfile)
+        for propList in properties.values():
+            propList = sorted(propList)
+
+    relevantBarLines = findRelevantLines(bar)
+
+    nodeTypesMap = findNodeTypes(relevantBarLines, properties)
 
     nodeTypesWithPropertyValues = mapNodeToOverrideValue(relevantBarLines, nodeTypesMap)   
 
-    nodeListAsDict = nodelist_to_dict(nodeTypesWithPropertyValues)
-
-    return nodeListAsDict
+    return nodeTypesWithPropertyValues
 
 if __name__ == "__main__":
-
+    tic = time.perf_counter()
     #TODO Fix UDP functionality
-
-    barfileLines = readFile("/test/Testbarfile.txt")
-    nodePropertySetLines = readFile("/test/NodePropertiesRuleset.txt")
+    # barPath = sys.argv[1]
+    # nodePropPath = sys.argv[2]
+    mainDir = dirname(realpath(dirname(realpath(__file__))))
+    barPath = mainDir + "/test/Testbarfile.txt"
+    nodePropPath = mainDir + "/test/node_properties.yaml"
+    jsonPath = mainDir + "/test/barefileproperties.json"
     
-    nodeListAsDict = getPropertiesFromBar(barfileLines, nodePropertySetLines)
+    nodeListAsDict = getPropertiesFromBar(barPath, nodePropPath)
+    toc = time.perf_counter()
+    formatToFileForPOC(nodeListAsDict, jsonPath)
+    print(f"Finished in {toc - tic:0.4f} seconds")
 
-    formatToFileForPOC(nodeListAsDict, "/test/test.json")
+    
